@@ -28,7 +28,7 @@
     </nav>
   </header>
   <main class="content-form">
-    <h1 class="content-form__title">Подбор программы</h1>
+    <h1 class="page__title">Подбор программы</h1>
     <p class="content-form__text">Заполните анкету, и мы подберем
       программу питания для вашего кота
     </p>
@@ -40,7 +40,8 @@
           ИМЯ:*<input class="form__control form__control--text" type="text" name="name" placeholder="барсик" required>
         </label>
         <label class="form__label">
-          Вес (кг):*<input class="form__control form__control--number" type="number" name="weight" placeholder="7" required>
+          Вес (кг):*<input class="form__control form__control--number" type="number" name="weight" placeholder="7"
+            required>
         </label>
         <label class="form__label">
           Возраст (лет):<input class="form__control form__control--number" type="number" name="age" placeholder="7">
@@ -60,13 +61,20 @@
       </fieldset>
       <fieldset class="form__fieldset">
         <legend class="form__legend">Контактные данные (владельца кота)</legend>
-        <input class="form__control form__control--email" type="email" name="email" placeholder="kuklachev@gmail.com" required>
-        <input class="form__control form__control--tel" type="tel" name="tel" placeholder="8 (960) 900-60-90" required>
+        <label class="form__label">
+          E-mail:*<input class="form__control form__control--email" type="email" name="email" placeholder="kuklachev@gmail.com"
+            required>
+        </label>
+        <label class="form__label">
+          Телефон:*<input class="form__control form__control--tel" type="tel" name="tel" placeholder="8 (960) 900-60-90"
+            required>
+        </label>
       </fieldset>
       <fieldset class="form__fieldset">
-        <legend class="form__label">Комментарий</legend>
         <label class="form__label">
-          <textarea class="form__control form__control--textarea" name="comment" placeholder="Расскажите обо всех повадках кота"></textarea>
+          Комментарий
+          <textarea class="form__control form__control--textarea" name="comment"
+            placeholder="Расскажите обо всех повадках кота"></textarea>
         </label>
       </fieldset>
       <fieldset class="form__fieldset">

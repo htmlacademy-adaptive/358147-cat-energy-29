@@ -30,10 +30,10 @@
 
   <main class="content-catalog">
     <section class="catalog">
-      <h1 class="catalog__title">Каталог продукции</h1>
+      <h1 class="page__title">Каталог продукции</h1>
       <ul class="catalog__list catalog-list">
         <li class="catalog-card">
-          <img class="catalog-card__image" src="img/catalog-card/catalog-card1.jpg" alt="Cat Energy PRO 500 г.">
+          <a href="#"><img class="catalog-card__image" src="img/catalog-card/catalog-card1.jpg" alt="Cat Energy PRO 500 г."></a>
           <h3 class="catalog-card__title">Cat Energy PRO 500 г</h3>
           <dl class="catalog-card__list">
             <dt class="catalog-card__description">Масса</dt>
@@ -46,7 +46,7 @@
           <a class="catalog-card__button button" href="#">заказать</a>
         </li>
         <li class="catalog-card">
-          <img class="catalog-card__image" src="img/catalog-card/catalog-card2.jpg" alt="Cat Energy PRO 1000 г.">
+          <a href="#"><img class="catalog-card__image" src="img/catalog-card/catalog-card2.jpg" alt="Cat Energy PRO 1000 г."></a>
           <h3 class="catalog-card__title">Cat Energy PRO 1000 г</h3>
           <dl class="catalog-card__list">
             <dt class="catalog-card__description">Масса</dt>
@@ -59,7 +59,7 @@
           <a class="catalog-card__button button" href="#">заказать</a>
         </li>
         <li class="catalog-card">
-          <img class="catalog-card__image" src="img/catalog-card/catalog-card3.jpg" alt="Cat Energy PRO 500 г.">
+          <a href="#"><img class="catalog-card__image" src="img/catalog-card/catalog-card3.jpg" alt="Cat Energy PRO 500 г."></a>
           <h3 class="catalog-card__title">Cat Energy PRO 500 г</h3>
           <dl class="catalog-card__list">
             <dt class="catalog-card__description">Масса</dt>
@@ -72,7 +72,7 @@
           <a class="catalog-card__button button" href="#">заказать</a>
         </li>
         <li class="catalog-card">
-          <img class="catalog-card__image" src="img/catalog-card/catalog-card4.jpg" alt="Cat Energy PRO 1000 г.">
+          <a href="#"><img class="catalog-card__image" src="img/catalog-card/catalog-card4.jpg" alt="Cat Energy PRO 1000 г."></a>
           <h3 class="catalog-card__title">Cat Energy PRO 1000 г</h3>
           <dl class="catalog-card__list">
             <dt class="catalog-card__description">Масса</dt>
@@ -85,7 +85,7 @@
           <a class="catalog-card__button button" href="#">заказать</a>
         </li>
         <li class="catalog-card">
-          <img class="catalog-card__image" src="img/catalog-card/catalog-card5.jpg" alt="Cat Energy slim 500 г.">
+          <a href="#"><img class="catalog-card__image" src="img/catalog-card/catalog-card5.jpg" alt="Cat Energy slim 500 г."></a>
           <h3 class="catalog-card__title">Cat Energy slim 500 г</h3>
           <dl class="catalog-card__list">
             <dt class="catalog-card__description">Масса</dt>
@@ -98,7 +98,7 @@
           <a class="catalog-card__button button" href="#">заказать</a>
         </li>
         <li class="catalog-card">
-          <img class="catalog-card__image" src="img/catalog-card/catalog-card6.jpg" alt="Cat Energy slim 1000 г.">
+          <a href="#"><img class="catalog-card__image" src="img/catalog-card/catalog-card6.jpg" alt="Cat Energy slim 1000 г."></a>
           <h3 class="catalog-card__title">Cat Energy slim 1000 г</h3>
           <dl class="catalog-card__list">
             <dt class="catalog-card__description">Масса</dt>
@@ -111,7 +111,7 @@
           <a class="catalog-card__button button" href="#">заказать</a>
         </li>
         <li class="catalog-card">
-          <img class="catalog-card__image" src="img/catalog-card/catalog-card7.jpg" alt="Cat Energy slim 500 г.">
+          <a href="#"><img class="catalog-card__image" src="img/catalog-card/catalog-card7.jpg" alt="Cat Energy slim 500 г."></a>
           <h3 class="catalog-card__title">Cat Energy slim 500 г</h3>
           <dl class="catalog-card__list">
             <dt class="catalog-card__description">Масса</dt>
@@ -123,12 +123,15 @@
           </dl>
           <a class="catalog-card__button button" href="#">заказать</a>
         </li>
+        <li class="catalog-card">
+          <div class="catalog__more">
+            <p class="catalog-more__description">Показать еще 100500 товаров</p>
+            <p class="catalog-more__text">На самом деле вкусов гораздо больше!</p>
+            <a href="#" class="catalog-more__button button">показать все</a>
+          </div>
+        </li>
       </ul>
-      <div class="catalog__more catalog-more">
-        <p class="catalog-more__description">Показать еще 100500 товаров</p>
-        <p class="catalog-more__text">На самом деле вкусов гораздо больше!</p>
-        <a href="#" class="catalog-more__button button">показать все</a>
-      </div>
+
     </section>
     <section class="additional">
       <h2 class="additional__title title">Дополнительные товары</h2>
@@ -168,6 +171,7 @@
       </ul>
     </section>
     <section class="present">
+      <h2 class="visually-hidden">подарок</h2>
       <p class="present__text">Закажите все и получите чехол для кота в подарок!</p>
     </section>
   </main>
@@ -175,7 +179,8 @@
   <footer class="main-footer">
     <p class="main-footer__cooperation">приглашаем к сотрудничеству дилеров!</p>
     <address class="main-footer__addres">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</address>
-    <img class="main-footer__map" src="img/map.jpg" width="320" height="362" alt="ул. Большая Конюшенная, д. 19/8 Санкт-Петербург.">
+    <img class="main-footer__map" src="img/map.jpg" width="320" height="362"
+      alt="ул. Большая Конюшенная, д. 19/8 Санкт-Петербург.">
     <a class="main-footer__logo logo" href="index.html">
       <img class="logo__text" src="img/logo-text-mobile.svg" width="128" height="24" alt="Логотип catenergy.">
     </a>
