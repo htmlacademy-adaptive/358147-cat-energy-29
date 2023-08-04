@@ -1,0 +1,18 @@
+.example-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.example-list__info {
+  color: $text-color-title;
+  font-family: "Oswald", sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.example-list__text {
+  font-size: 12px;
+  line-height: 12px;
+}

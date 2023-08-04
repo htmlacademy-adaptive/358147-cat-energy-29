@@ -1,0 +1,20 @@
+.page__body {
+  margin: 0;
+  background-color: $background-color-page;
+  color: $text-color-page;
+  font-family: "Lato", sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.page__title {
+font-family: "Oswald", sans-serif;
+font-size: 36px;
+line-height: 36px;
+font-weight: 400;
+color: $text-color-title;
+}
+
+.page__title--hero {
+  color: $text-color-promo;
+}
