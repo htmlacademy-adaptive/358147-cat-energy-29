@@ -1,0 +1,13 @@
+.hero {
+  color: $color-promo;
+  background-color: $background-color-promo;
+  background-image: url("../img/bg-hero.jpg");
+  background-repeat: no-repeat;
+}
+
+.hero__slogan {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 14px;
+  text-transform: uppercase;
+}

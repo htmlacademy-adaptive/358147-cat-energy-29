@@ -1,0 +1,13 @@
+.catalog-card {
+  font-size: 12px;
+  line-height: 16px;
+}
+
+.catalog-card__title {
+  color: $color-title-card;
+  font-family: "Oswald", "Arial", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  text-transform: uppercase;
+}
