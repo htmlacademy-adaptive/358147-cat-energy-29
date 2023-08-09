@@ -4,14 +4,15 @@
 
 .features-card__title {
   color: $color-title;
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
+  font-weight: 400;
   font-size: 24px;
   line-height: 37px;
   text-transform: uppercase;
 }
 
 .features-card__link {
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   color: $color-link;
   font-size: 16px;
   line-height: 16px;
