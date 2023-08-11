@@ -1,0 +1,12 @@
+.logo__text {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+@media (min-width: $tablet-width) {
+  .logo__text {
+    position: static;
+    transform: none;
+  }
+}

@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   list-style: none;
+  display: none;
 }
 
 .navigation-list__link {
@@ -11,4 +12,20 @@
   font-size: 20px;
   line-height: 20px;
   text-transform: uppercase;
+  padding: 5px;
+}
+
+@media (min-width: $tablet-width) {
+  .navigation-list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 475px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .navigation-list {
+    width: 500px;
+  }
 }

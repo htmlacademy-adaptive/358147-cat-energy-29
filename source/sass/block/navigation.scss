@@ -1,4 +1,20 @@
+.navigation {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+}
+
 .navigation__toggle {
   border: none;
   background-color: $background-color-page;
+  outline: 2px solid #000000;
+  width: 24px;
+  height: 24px;
 }
+
+@media (min-width: $tablet-width) {
+  .navigation__toggle {
+   display: none;
+  }
+}
+
