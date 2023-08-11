@@ -10,6 +10,11 @@
   font-size: 24px;
   line-height: 37px;
   text-transform: uppercase;
+  margin: 0;
+  padding: 7px 0 7px 60px;
+  background-image: url("https://placehold.co/50x50");
+  background-repeat: no-repeat;
+  background-position: left center;
 }
 
 .features-card__link {
@@ -20,3 +25,32 @@
   text-transform: uppercase;
   text-decoration: none;
 }
+
+@media (min-width: $tablet-width) {
+  .features-card__title {
+    background: none;
+    padding: 0;
+  }
+
+  .features-card {
+    padding-right: 316px;
+    background-image: url("https://placehold.co/200x200");
+    background-repeat: no-repeat;
+    background-position: right 30px center;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .features-card__title {
+    padding: 7px 0 7px 60px;
+    background-image: url("https://placehold.co/50x50");
+    background-repeat: no-repeat;
+    background-position: left center;
+  }
+
+  .features-card {
+    padding: 52px;
+    background-image: none;
+  }
+}
+
