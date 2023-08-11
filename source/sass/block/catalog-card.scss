@@ -1,7 +1,7 @@
 .catalog-card {
   font-size: 12px;
   line-height: 16px;
-  border-top: 1px solid #EBEBEB;
+  border-top: 1px solid $border-catalog;
 }
 
 .catalog-card__wrapper {
@@ -23,4 +23,3 @@
     border-top: none;
   }
 }
-
