@@ -1,6 +1,12 @@
 .catalog-card {
   font-size: 12px;
   line-height: 16px;
+  border-top: 1px solid #EBEBEB;
+}
+
+.catalog-card__wrapper {
+  width: 320px;
+  margin: 0 auto;
 }
 
 .catalog-card__title {
@@ -11,3 +17,10 @@
   line-height: 20px;
   text-transform: uppercase;
 }
+
+@media (min-width: $tablet-width) {
+  .catalog-card {
+    border-top: none;
+  }
+}
+
