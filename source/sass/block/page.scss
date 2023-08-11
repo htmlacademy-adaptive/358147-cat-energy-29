@@ -19,3 +19,12 @@
 .page__title--hero {
   color: $color-promo;
 }
+
+@media (min-width: $tablet-width) {
+  .page__title--hero {
+    color: $color-title;
+    font-size: 60px;
+    line-height: 60px;
+    width: 418px;
+  }
+}
