@@ -7,11 +7,27 @@
   text-transform: uppercase;
 }
 
+.main-footer__addres-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
 .main-footer__addres {
   line-height: 20px;
   font-style: normal;
 }
 
+.main-footer__map {
+  display: block;
+  margin: auto;
+}
+
 .main-footer__wrapper {
   background-color: $background-color-card;
+}
+
+@media (min-width: $tablet-width) {
+  .main-footer__social-wrapper {
+    display: flex;
+  }
 }
