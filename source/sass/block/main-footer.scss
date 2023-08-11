@@ -5,6 +5,7 @@
   font-style: normal;
   line-height: 20px;
   text-transform: uppercase;
+  margin: 0;
 }
 
 .main-footer__addres-wrapper {
@@ -29,5 +30,13 @@
 @media (min-width: $tablet-width) {
   .main-footer__social-wrapper {
     display: flex;
+  }
+
+  .main-footer__cooperation {
+    width: 165px;
+  }
+
+  .main-footer__addres {
+    width: 160px;
   }
 }

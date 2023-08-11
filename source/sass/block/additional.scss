@@ -3,3 +3,11 @@
   padding: 0;
   list-style: none;
 }
+
+@media (min-width: $desktop-width) {
+  .additional__wrapper {
+    display: grid;
+    grid-template-columns: 1fr 245px;
+    gap: 80px;
+  }
+}
