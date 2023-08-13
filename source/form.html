@@ -31,15 +31,15 @@
     </nav>
   </header>
   <main class="content-form">
+    <h1 class="page__title">Подбор программы</h1>
     <div class="container">
-      <h1 class="page__title">Подбор программы</h1>
       <p class="content-form__text">Заполните анкету, и мы подберем
         программу питания для вашего кота
       </p>
     </div>
     <form class="form" action="https://echo.htmlacademy.ru/" method="post">
       <div class="form__container-info">
-        <fieldset class="form__fieldset">
+        <fieldset class="form__fieldset form__fieldset--border">
           <legend class="form__legend"><span class="visually-hidden">Информация о коте</span></legend>
           <div class="container form__container">
             <label class="form__label">
@@ -55,7 +55,7 @@
             </label>
           </div>
         </fieldset>
-        <fieldset class="form__fieldset">
+        <fieldset class="form__fieldset form__fieldset--border">
           <legend class="form__legend"><span class="visually-hidden">Выбор программы</span></legend>
           <div class="container form__container">
             <label class="form__label">
@@ -70,8 +70,11 @@
           </div>
         </fieldset>
       </div>
+
       <fieldset class="form__fieldset">
-        <legend class="form__legend">Контактные данные (владельца кота)</legend>
+        <h2 class="form__legend form__legend--line">
+          <div class="container"><span class="form__legend-text form__legend-text--contacts">Контактные данные (владельца кота)</span></div>
+        </h2>
         <div class="container form__contacts--wrapper">
           <label class="form__label">
             E-mail:*<input class="form__control form__control--email" type="email" name="email"
@@ -84,16 +87,21 @@
         </div>
       </fieldset>
       <fieldset class="form__fieldset">
-        <legend class="form__legend">Комментарий</legend>
+        <h2 class="form__legend form__legend--line">
+          <div class="container"><span class="form__legend-text">Комментарий</span></div>
+        </h2>
         <div class="container">
           <label class="form__label">
             <textarea class="form__control form__control--textarea" name="comment"
               placeholder="Расскажите обо всех повадках кота"></textarea>
           </label>
+        </div>
       </fieldset>
-      </div>
+
       <fieldset class="form__fieldset">
-        <legend class="form__legend">Дополнительно</legend>
+        <h2 class="form__legend form__legend--line">
+          <div class="container"><span class="form__legend-text">Дополнительно</span></div>
+        </h2>
         <div class="container form__checkbox-wrapper">
           <label class="form__label form__label--checkbox">
             <input class="form__checkbox" name="sugar" type="checkbox" checked>сахарозаменитель
