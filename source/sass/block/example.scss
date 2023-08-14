@@ -1,5 +1,5 @@
 .example {
-  background-image: linear-gradient($background-color-page 0px, $background-color-card 0px);
+  background-image: linear-gradient($background-color-page 0, $background-color-card 0);
 }
 
 @media (min-width: $tablet-width) {
