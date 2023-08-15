@@ -1,3 +1,7 @@
+.main-footer {
+  position: relative;
+}
+
 .main-footer__cooperation {
   font-family: "Oswald", "Arial", sans-serif;
   color: $color-cooperation;
@@ -46,5 +50,13 @@
 
   .main-footer__addres {
     width: 160px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-footer__addres-wrapper {
+    position: absolute;
+    top: 30px;
+    background-color: $background-color-page;
   }
 }
