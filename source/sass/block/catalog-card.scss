@@ -5,8 +5,12 @@
 }
 
 .catalog-card__wrapper {
-  width: 320px;
+  width: 280px;
   margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .catalog-card__title {
@@ -18,8 +22,17 @@
   text-transform: uppercase;
 }
 
+.catalog-card__button {
+  width: 100%;
+}
+
 @media (min-width: $tablet-width) {
   .catalog-card {
     border-top: none;
+    width: 324px;
+  }
+
+  .catalog-card__wrapper {
+    display: block;
   }
 }
