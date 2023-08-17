@@ -15,3 +15,10 @@
 .additional-card__price {
   line-height: 14px;
 }
+
+@media (min-width: $desktop-width) {
+  .additional-card {
+    display: flex;
+    justify-content: space-between;
+  }
+}

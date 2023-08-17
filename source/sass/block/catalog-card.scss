@@ -1,6 +1,21 @@
 .catalog-card {
   font-size: 12px;
   line-height: 16px;
+  border-top: 1px solid $border-catalog;
+}
+
+.catalog-card__wrapper {
+  width: 280px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.catalog-card__link {
+  text-decoration: none;
+  color: inherit;
 }
 
 .catalog-card__title {
@@ -10,4 +25,19 @@
   font-weight: 400;
   line-height: 20px;
   text-transform: uppercase;
+}
+
+.catalog-card__button {
+  width: 100%;
+}
+
+@media (min-width: $tablet-width) {
+  .catalog-card {
+    border-top: none;
+    width: 324px;
+  }
+
+  .catalog-card__wrapper {
+    display: block;
+  }
 }

@@ -1,5 +1,11 @@
 .form__fieldset {
   border: none;
+  margin: 0;
+  padding: 0;
+}
+
+.form__fieldset--border {
+  border-bottom: 1px solid $border-catalog;
 }
 
 .form__label {
@@ -7,6 +13,8 @@
   font-size: 16px;
   line-height: 18px;
   text-transform: uppercase;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .form__control {
@@ -14,6 +22,7 @@
   font-size: 16px;
   line-height: 18px;
   text-transform: uppercase;
+  flex-grow: 1;
 }
 
 .form__legend {
@@ -21,9 +30,79 @@
   font-family: "Oswald", "Arial", sans-serif;
   font-size: 24px;
   line-height: 26px;
+  font-weight: 400;
+}
+
+.form__legend--line {
+  &::before {
+    content: " ";
+    display: block;
+    height: 2px;
+    width: 100%;
+    background-color: $background-color-promo;
+    margin-bottom: -15px;
+  }
+}
+
+.form__legend-text {
+  padding: 0 20px;
+  margin-left: -20px;
+  background-color: $background-color-page;
+}
+
+.form__legend-text--contacts {
+  display: block;
+  width: 183px;
 }
 
 .form__info {
   font-size: 14px;
   line-height: 16px;
+}
+
+@media (min-width: $tablet-width) {
+  .form__fieldset--border {
+    border-bottom: none;
+  }
+
+  .form__legend-text--contacts {
+    display: inline;
+    width: auto;
+  }
+
+  .form__checkbox-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .form__label--checkbox {
+    width: 50%;
+  }
+
+  .form__submit-wrapper {
+    display: flex;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .form__container-info {
+    width: 1220px;
+    padding: 0 110px;
+    margin: 0 auto;
+    display: flex;
+  }
+
+  .form__container {
+    width: auto;
+    padding: 0;
+    margin: 0;
+  }
+
+  .form__contacts--wrapper {
+    display: flex;
+  }
+
+  .form__label--checkbox {
+    width: 25%;
+  }
 }

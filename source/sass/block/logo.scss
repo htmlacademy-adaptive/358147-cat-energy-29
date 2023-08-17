@@ -1,0 +1,19 @@
+.logo__text--header {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.logo__text--footer {
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+
+@media (min-width: $tablet-width) {
+  .logo__text--header {
+    position: static;
+    transform: none;
+  }
+}

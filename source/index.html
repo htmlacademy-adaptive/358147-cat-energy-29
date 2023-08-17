@@ -3,16 +3,18 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Кэт энерджи</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body class="page__body">
-  <header class="main-header">
+  <header class="main-header container">
     <nav class="navigation">
       <a class="navigation__logo logo">
         <img class="logo__image" src="img/logo-mobile.svg" width="33" height="38" alt="Логотип catenergy.">
-        <img class="logo__text" src="img/logo-text-mobile.svg" width="101" height="18" alt="Логотип catenergy.">
+        <img class="logo__text logo__text--header" src="img/logo-text-mobile.svg" width="101" height="18"
+          alt="Логотип catenergy.">
       </a>
       <ul class="navigation-list">
         <li class="navigation-list__itam">
@@ -30,12 +32,20 @@
   </header>
   <main class="content-index">
     <section class="hero">
-      <h1 class="page__title page__title--hero">Функциональное питание для котов</h1>
-      <p class="hero__slogan">Занялся собой? Займись котом!</p>
-      <img src="img/catenergy-pro.png" alt="Корм catenergy pro." width="280" height="270">
-      <a class="hero__button button button--hero" href="form.html">подобрать программу</a>
+      <div class="hero__wrapper">
+        <div class="hero__bg-wrapper">
+          <div class="hero__container">
+            <h1 class="page__title page__title--hero">Функциональное питание для котов</h1>
+            <p class="hero__slogan">Занялся собой? Займись котом!</p>
+          </div>
+        </div>
+        <div class="hero__container">
+          <img class="hero__image" src="img/catenergy-pro.png" alt="Корм catenergy pro." width="280" height="270">
+          <a class="hero__button button button--hero" href="form.html">подобрать программу</a>
+        </div>
+      </div>
     </section>
-    <section class="features">
+    <section class="features container">
       <h2 class="visually-hidden">Программы</h2>
       <ul class="features__list">
         <li class="features-card">
@@ -52,7 +62,7 @@
         </li>
       </ul>
     </section>
-    <section class="advantages">
+    <section class="advantages container">
       <h2 class="advantages__title title">Как это работает</h2>
       <ul class="advantages__list">
         <li class="advantages-card">
@@ -84,52 +94,64 @@
       </ul>
     </section>
     <section class="example">
-      <h2 class="example__title title">Живой пример</h2>
-      <p class="example__text">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim.
-        Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов
-        в день.
-      </p>
-      <ul class="example-list">
-        <li class="example-list__item">
-          <b class="example-list__info">5 КГ</b>
-          <p class="example-list__text">снижение веса</p>
-        </li>
-        <li class="example-list__item">
-          <b class="example-list__info">60 ДНЕЙ</b>
-          <p class="example-list__text">затрачено времени</p>
-        </li>
-      </ul>
-      <p class="example__price">Затраты на питание: 15 000 РУБ.</p>
-
-      <div class="slider">
-        <img class="slider__image" src="img/cat-before.png" width="280" height="256" alt="Толстый кот.">
-        <img class="slider__image" src="img/cat-after.png" width="280" height="256" alt="Худой кот.">
-        <button class="slider__button" type="button"><span class="visually-hidden">Сравнить котов</span></button>
+      <div class="container example__container">
+        <div class="example__wrapper">
+          <h2 class="example__title title">Живой пример</h2>
+          <p class="example__text">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim.
+            Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16
+            часов
+            в день.
+          </p>
+          <ul class="example-list">
+            <li class="example-list__item">
+              <b class="example-list__info">5 КГ</b>
+              <p class="example-list__text">снижение веса</p>
+            </li>
+            <li class="example-list__item">
+              <b class="example-list__info">60 ДНЕЙ</b>
+              <p class="example-list__text">затрачено времени</p>
+            </li>
+            <li class="example-list__item example-list__item--price">
+              <p class="example-list__price">Затраты на питание: 15 000 РУБ.</p>
+            </li>
+          </ul>
+        </div>
+        <div class="slider">
+          <img class="slider__image" src="img/cat-before.png" width="280" height="256" alt="Толстый кот.">
+          <img class="slider__image" src="img/cat-after.png" width="280" height="256" alt="Худой кот.">
+          <button class="slider__button" type="button"><span class="visually-hidden">Сравнить котов</span></button>
+        </div>
       </div>
-
     </section>
   </main>
   <footer class="main-footer">
-    <p class="main-footer__cooperation">приглашаем к сотрудничеству дилеров!</p>
-    <address class="main-footer__addres">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</address>
+    <div class="container">
+      <div class="main-footer__addres-wrapper">
+        <p class="main-footer__cooperation">приглашаем к сотрудничеству дилеров!</p>
+        <address class="main-footer__addres">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</address>
+      </div>
+    </div>
     <div class="main-footer__wrapper">
       <img class="main-footer__map" src="img/map.jpg" width="320" height="362"
         alt="ул. Большая Конюшенная, д. 19/8 Санкт-Петербург.">
-      <a class="main-footer__logo logo">
-        <img class="logo__text" src="img/logo-text-mobile.svg" width="128" height="24" alt="Логотип catenergy.">
-      </a>
-      <ul class="main-footer__social-list social-list">
-        <li class="social-list__item">
-          <a class="social-list__link" href="#"><span class="visually-hidden">Вконтакте</span></a>
-        </li>
-        <li class="social-list__item">
-          <a class="social-list__link" href="#"><span class="visually-hidden">Ютуб</span></a>
-        </li>
-        <li class="social-list__item">
-          <a class="social-list__link" href="#"><span class="visually-hidden">Телеграм</span></a>
-        </li>
-      </ul>
-      <a class="main-footer__copyright copyright" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+      <div class="container main-footer__social-wrapper">
+        <a class="main-footer__logo logo">
+          <img class="logo__text logo__text--footer" src="img/logo-text-mobile.svg" width="128" height="24"
+            alt="Логотип catenergy.">
+        </a>
+        <ul class="main-footer__social-list social-list">
+          <li class="social-list__item">
+            <a class="social-list__link" href="#"><span class="visually-hidden">Вконтакте</span></a>
+          </li>
+          <li class="social-list__item">
+            <a class="social-list__link" href="#"><span class="visually-hidden">Ютуб</span></a>
+          </li>
+          <li class="social-list__item">
+            <a class="social-list__link" href="#"><span class="visually-hidden">Телеграм</span></a>
+          </li>
+        </ul>
+        <a class="main-footer__copyright copyright" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+      </div>
     </div>
   </footer>
 </body>

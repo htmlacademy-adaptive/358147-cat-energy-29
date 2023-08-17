@@ -3,3 +3,37 @@
   padding: 0;
   list-style: none;
 }
+
+.additional__title--line {
+  &::before {
+    content: " ";
+    display: block;
+    height: 2px;
+    width: 100%;
+    background-color: $background-color-promo;
+    margin-bottom: -22px;
+  }
+}
+
+.additional__title-text {
+  padding: 0 20px;
+  margin-left: -20px;
+  background-color: $background-color-page;
+  display: block;
+  width: 240px;
+}
+
+@media (min-width: $tablet-width) {
+  .additional__title-text {
+    display: inline;
+    width: auto;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .additional__wrapper {
+    display: grid;
+    grid-template-columns: 1fr 245px;
+    gap: 80px;
+  }
+}

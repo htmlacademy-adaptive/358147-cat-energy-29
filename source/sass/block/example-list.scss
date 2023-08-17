@@ -2,6 +2,22 @@
   margin: 0;
   padding: 0;
   list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.example-list__price {
+  color: $color-title;
+  font-family: "Oswald", "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  text-transform: uppercase;
+}
+
+.example-list__item--price {
+  width: 100%;
+  text-align: center;
 }
 
 .example-list__info {
@@ -15,4 +31,17 @@
 .example-list__text {
   font-size: 12px;
   line-height: 12px;
+}
+
+@media (min-width: $tablet-width) {
+  .example-list__item--price {
+    width: 180px;
+    text-align: left;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .example-list__item--price {
+    width: 100%;
+  }
 }

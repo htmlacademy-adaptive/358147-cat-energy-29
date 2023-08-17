@@ -1,4 +1,31 @@
+.navigation {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 13px 0;
+}
+
 .navigation__toggle {
   border: none;
   background-color: $background-color-page;
+  background-image: url("https://placehold.co/24x24");
+  width: 24px;
+  height: 24px;
+}
+
+@media (min-width: $tablet-width) {
+  .navigation__toggle {
+    display: none;
+  }
+
+  .navigation {
+    padding: 25px 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .navigation {
+    padding: 55px 0;
+  }
 }
