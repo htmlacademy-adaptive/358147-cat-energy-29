@@ -11,10 +11,15 @@
   line-height: 37px;
   text-transform: uppercase;
   margin: 0;
-  padding: 7px 0 7px 60px;
+  margin-bottom: 22px;
+  padding: 7px 0 7px 70px;
   background-image: url("https://placehold.co/50x50");
   background-repeat: no-repeat;
   background-position: left center;
+}
+
+.features-card__text {
+  margin-bottom: 23px;
 }
 
 .features-card__link {
@@ -24,6 +29,10 @@
   line-height: 16px;
   text-transform: uppercase;
   text-decoration: none;
+  display: block;
+  border-top: 1px solid $border-catalog;
+  padding-top: 18px;
+  margin-bottom: 5px;
 }
 
 @media (min-width: $tablet-width) {

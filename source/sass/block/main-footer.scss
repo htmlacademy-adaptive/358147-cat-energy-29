@@ -15,6 +15,8 @@
 .main-footer__addres-wrapper {
   display: flex;
   justify-content: space-between;
+  padding-top: 27px;
+  padding-bottom: 27px;
 }
 
 .main-footer__addres {
@@ -28,6 +30,7 @@
 }
 
 .main-footer__social-list {
+  margin-top: 20px;
   margin-bottom: 20px;
 }
 
@@ -35,8 +38,19 @@
   background-color: $background-color-card;
 }
 
+.main-footer__logo {
+  display: block;
+  border-bottom: 1px solid $border-catalog;
+}
+
 .main-footer__social-wrapper {
-  padding: 40px 0;
+  padding: 36px 0;
+}
+
+.main-footer__copyright {
+  display: block;
+  border-top: 1px solid $border-catalog;
+  padding-top: 23px;
 }
 
 @media (min-width: $tablet-width) {
