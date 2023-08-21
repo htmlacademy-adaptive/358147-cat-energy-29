@@ -43,7 +43,19 @@
   .hero__bg-wrapper {
     background-color: $background-color-page;
     background-image: none;
+    padding-top: 40px;
     padding-bottom: 10px;
+  }
+
+  .page__title--hero {
+    margin-left: 88px;
+    margin-bottom: 45px;
+  }
+
+  .hero__slogan {
+    font-size: 20px;
+    line-height: 20px;
+    margin-left: 88px;
   }
 
   .hero__image {
@@ -69,5 +81,9 @@
   .hero__container {
     width: auto;
     padding: 0;
+  }
+
+  .hero__bg-wrapper {
+    padding-top: 75px;
   }
 }

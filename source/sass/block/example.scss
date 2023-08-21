@@ -12,6 +12,10 @@
   .example {
     background-image: linear-gradient($background-color-page 300px, $background-color-card 300px);
   }
+
+  .example__title {
+    margin-bottom: 64px;
+  }
 }
 
 @media (min-width: $desktop-width) {

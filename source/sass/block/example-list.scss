@@ -42,7 +42,7 @@
   font-size: 12px;
   line-height: 12px;
   background-color: $background-color-card;
-  width: 87px;
+  padding: 0 5px;
   margin: 0;
   position: absolute;
   bottom: -19px;
@@ -52,9 +52,38 @@
 
 
 @media (min-width: $tablet-width) {
+  .example-list {
+    align-items: center;
+    justify-content: left;
+  }
+
+  .example-list__item {
+    width: 160px;
+  }
+
+  .example-list__info {
+    font-size: 30px;
+    line-height: 37px;
+  }
+
+  .example-list__text {
+    font-size: 14px;
+    line-height: 14px;
+  }
+
+  .example-list__item--weight {
+    margin-right: 45px;
+  }
+
   .example-list__item--price {
     width: 180px;
     text-align: left;
+    margin-left: auto;
+  }
+
+  .example-list__price {
+    font-size: 20px;
+    text-align: end;
   }
 }
 

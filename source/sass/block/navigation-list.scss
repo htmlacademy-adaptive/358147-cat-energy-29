@@ -20,12 +20,23 @@
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    width: 475px;
+    width: 446px;
+  }
+
+  .navigation-list__link {
+    font-size: 18px;
+    line-height: 24px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .navigation-list {
     width: 500px;
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  .navigation-list__link {
+    color: $color-button;
   }
 }
