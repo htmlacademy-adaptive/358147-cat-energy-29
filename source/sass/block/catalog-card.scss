@@ -13,6 +13,10 @@
   justify-content: space-between;
 }
 
+.catalog-card__content-wrapper {
+  width: 140px;
+}
+
 .catalog-card__link {
   text-decoration: none;
   color: inherit;
@@ -25,19 +29,59 @@
   font-weight: 400;
   line-height: 20px;
   text-transform: uppercase;
+  width: 80px;
 }
 
 .catalog-card__button {
   width: 100%;
 }
 
+.catalog-card__list-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.catalog-card__value {
+  margin: 0;
+}
+
 @media (min-width: $tablet-width) {
   .catalog-card {
     border-top: none;
-    width: 324px;
+    text-align: center;
+    padding-bottom: 20px;
+    background-image: linear-gradient(#ffffff 40px, #f2f2f2 40px);
+  }
+
+  .catalog-card__title {
+    font-size: 20px;
+    line-height: 24px;
+    width: 135px;
+    margin: 0 auto;
+  }
+
+  .catalog-card__list-wrapper {
+    border-bottom: 1px solid #cdcdcdcd;
+  }
+
+  .catalog-card__list {
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  .catalog-card--more {
+    padding-top: 160px;
+    background-image: none;
+    border: 1px solid #cdcdcdcd;
   }
 
   .catalog-card__wrapper {
     display: block;
+    padding: 0 37px;
+    width: auto;
+  }
+
+  .catalog-card__content-wrapper {
+    width: auto;
   }
 }
