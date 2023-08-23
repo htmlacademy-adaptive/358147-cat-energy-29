@@ -1,9 +1,36 @@
 .advantages-card {
   padding-left: 80px;
   min-height: 60px;
-  background-image: url("https://placehold.co/60x60");
-  background-repeat: no-repeat;
-  background-position: left top;
+  position: relative;
+
+  &::after {
+    display: block;
+    content: "";
+    width: 60px;
+    height: 60px;
+    background-color: $background-color-promo;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  &--leaf::after {
+    background-image: url("../img/icon/icon-leaf.svg");
+  }
+
+  &--powder::after {
+    background-image: url("../img/icon/icon-powder.svg");
+  }
+
+  &--eat::after {
+    background-image: url("../img/icon/icon-eat.svg");
+  }
+
+  &--clock::after {
+    background-image: url("../img/icon/icon-clock.svg");
+  }
 }
 
 .advantages-card__text {
@@ -14,7 +41,6 @@
   .advantages-card {
     padding-left: 0;
     padding-top: 112px;
-    background-image: url("https://placehold.co/80x80");
     position: relative;
     min-height: 190px;
 
@@ -30,6 +56,11 @@
       top: -50px;
       right: 100px;
       z-index: -1;
+    }
+
+    &::after {
+      width: 80px;
+      height: 80px;
     }
   }
 
