@@ -9,9 +9,16 @@
 .navigation__toggle {
   border: none;
   background-color: $background-color-page;
-  background-image: url("https://placehold.co/24x24");
   width: 24px;
   height: 24px;
+  cursor: pointer;
+  background-image: url("../img/icon/nav-opened.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+
+  &--open {
+    background-image: url("../img/icon/nav-closed.svg");
+  }
 }
 
 @media (min-width: $tablet-width) {
