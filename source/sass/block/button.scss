@@ -9,6 +9,14 @@
   text-transform: uppercase;
   padding: 10px;
   text-align: center;
+
+  &:hover {
+    background-color: $background-color-button-hover;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+  }
 }
 
 .button--hero {

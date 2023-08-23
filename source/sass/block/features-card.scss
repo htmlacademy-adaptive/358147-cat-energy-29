@@ -13,9 +13,30 @@
   margin: 0;
   margin-bottom: 22px;
   padding: 7px 0 7px 70px;
-  background-image: url("https://placehold.co/50x50");
-  background-repeat: no-repeat;
-  background-position: left center;
+  position: relative;
+
+  &::before {
+    display: block;
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+}
+
+.features-card__title--slim::before {
+  width: 50px;
+  height: 53px;
+  background-image: url("../img/icon/features-slim.svg");
+}
+
+.features-card__title--fat::before {
+  width: 67px;
+  height: 50px;
+  background-image: url("../img/icon/features-fat.svg");
 }
 
 .features-card__text {
@@ -29,18 +50,60 @@
   line-height: 16px;
   text-transform: uppercase;
   text-decoration: none;
-  display: block;
   border-top: 1px solid $border-catalog;
   padding-top: 18px;
   margin-bottom: 5px;
+  display: flex;
+  align-items: center;
+
+  &::after {
+    display: block;
+    content: "";
+    width: 24px;
+    height: 12px;
+    background-image: url("../img/icon/arrow.svg");
+    background-position: right center;
+    background-repeat: no-repeat;
+    margin-left: 17px;
+  }
+
+  &:hover::after {
+    width: 30px;
+  }
+
+  &:active,
+  &:active::after {
+    opacity: 0.3;
+  }
 }
 
 @media (min-width: $tablet-width) {
   .features-card {
-    background-image: url("https://placehold.co/200x200");
-    background-repeat: no-repeat;
-    background-position: right 30px center;
     padding: 77px 316px 57px 52px;
+    position: relative;
+
+    &::before {
+      display: block;
+      content: "";
+      position: absolute;
+      right: 40px;
+      top: 85;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+    }
+  }
+
+  .features-card--slim::before {
+    width: 200px;
+    height: 211px;
+    background-image: url("../img/icon/features-slim.svg");
+  }
+
+  .features-card--fat::before {
+    width: 268px;
+    height: 200px;
+    background-image: url("../img/icon/features-fat.svg");
   }
 
   .features-card__title {
@@ -49,6 +112,10 @@
     font-size: 36px;
     line-height: 36px;
     margin-bottom: 27px;
+
+    &::before {
+      display: none;
+    }
   }
 
   .features-card__text {
@@ -66,15 +133,36 @@
 }
 
 @media (min-width: $desktop-width) {
-  .features-card__title {
-    padding: 7px 0 7px 60px;
-    background-image: url("https://placehold.co/50x50");
-    background-repeat: no-repeat;
-    background-position: left center;
-  }
-
   .features-card {
     padding: 52px;
+    padding-top: 45px;
     background-image: none;
+
+    &::before {
+      display: none;
+    }
+  }
+
+  .features-card__title {
+    padding: 32px 0 32px 160px;
+    margin-bottom: 37px;
+
+    &::before {
+      display: block;
+    }
+  }
+
+  .features-card__title--slim::before {
+    width: 100px;
+    height: 106px;
+  }
+
+  .features-card__title--fat::before {
+    width: 134px;
+    height: 100px;
+  }
+
+  .features-card__text {
+    margin-bottom: 35px;
   }
 }
