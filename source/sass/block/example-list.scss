@@ -96,11 +96,21 @@
   .example-list__price {
     font-size: 20px;
     text-align: end;
+    text-align: left;
   }
 }
 
 @media (min-width: $desktop-width) {
+  .example-list__text {
+    background-color: $background-color-card;
+  }
+
   .example-list__item--price {
     width: 100%;
+  }
+
+  .example-list__price {
+    text-align: left;
+    margin-top: 46px;
   }
 }

@@ -25,6 +25,13 @@
 }
 
 @media (min-width: $desktop-width) {
+  .example {
+    border: none;
+    padding-top: 28px;
+    padding-bottom: 40px;
+    background-image: linear-gradient($background-color-page 150px, $background-color-card 150px);
+  }
+
   .example__container {
     display: flex;
     justify-content: space-between;
@@ -34,7 +41,11 @@
     width: 450px;
   }
 
-  .example {
-    background-image: linear-gradient($background-color-page 100px, $background-color-card 100px);
+  .example__title {
+    margin-bottom: 140px;
+  }
+
+  .example__text {
+    margin-bottom: 71px;
   }
 }
