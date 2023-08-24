@@ -8,7 +8,7 @@
   padding: 0;
   list-style: none;
   display: grid;
-  gap: 20px;
+  gap: 60px;
 }
 
 .advantages__title {
@@ -19,6 +19,7 @@
 @media (min-width: $tablet-width) {
   .advantages {
     padding-top: 47px;
+    padding-bottom: 20px;
   }
 
   .advantages__title {

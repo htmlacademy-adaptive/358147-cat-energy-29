@@ -10,11 +10,17 @@
 
 @media (min-width: $tablet-width) {
   .example {
-    background-image: linear-gradient($background-color-page 300px, $background-color-card 300px);
+    background-image: linear-gradient(to top, $background-color-card 200px, $background-color-page 200px);
+    border-top: 1px solid $border-catalog;
+    padding-top: 45px;
   }
 
   .example__title {
     margin-bottom: 64px;
+  }
+
+  .example__text {
+    margin-bottom: 30px;
   }
 }
 
