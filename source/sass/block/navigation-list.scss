@@ -10,8 +10,10 @@
 .navigation-list--gs {
   position: absolute;
   top: 66px;
-  left: 0;
-  right: 0;
+  width: 100vw;
+  min-width: 320px;
+  left: 50%;
+  transform: translate(-50%);
   display: none;
 }
 
@@ -42,6 +44,7 @@
     flex-wrap: wrap;
     width: 446px;
     background-color: transparent;
+    transform: none;
   }
 
   .navigation-list__item {

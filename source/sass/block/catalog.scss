@@ -1,3 +1,8 @@
+.catalog {
+  padding-bottom: 10px;
+  margin-bottom: 35px;
+}
+
 .catalog__list {
   margin: 0;
   padding: 0;
@@ -13,6 +18,10 @@
     grid-template-columns: 1fr 1fr;
     gap: 60px;
   }
+
+  .catalog {
+    margin-bottom: 80px;
+  }
 }
 
 @media (min-width: $desktop-width) {
@@ -20,5 +29,6 @@
     width: 1220px;
     padding: 0 110px;
     grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 80px;
   }
 }

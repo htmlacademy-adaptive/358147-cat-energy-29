@@ -8,7 +8,7 @@
   padding: 0;
   list-style: none;
   display: grid;
-  gap: 60px;
+  gap: 20px;
 }
 
 .advantages__title {
@@ -29,6 +29,7 @@
   .advantages__list {
     grid-template-columns: 1fr 1fr;
     counter-reset: advantages;
+    gap: 60px;
   }
 }
 

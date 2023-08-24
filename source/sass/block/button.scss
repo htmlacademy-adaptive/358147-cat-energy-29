@@ -29,6 +29,15 @@
 .button--more {
   background-color: $background-color-card;
   color: $color-page;
+  display: block;
+
+  &:hover {
+    background-color: $border-menu;
+  }
+
+  &:active {
+    color: rgba(65, 65, 65, 0.3);
+  }
 }
 
 @media (min-width: $tablet-width) {
