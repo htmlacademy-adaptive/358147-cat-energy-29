@@ -66,6 +66,17 @@
     }
   }
 
+  .navigation-list__link--activ-index::after {
+    display: block;
+    content: "";
+    height: 2px;
+    background-color: $background-color-promo;
+    position: absolute;
+    bottom: 6px;
+    left: 5px;
+    right: 5px;
+  }
+
   .navigation-list__link--activ::after {
     display: block;
     content: "";
@@ -93,7 +104,15 @@
     color: $color-button;
   }
 
-  .navigation-list__link--activ::after {
+  .navigation-list__link--activ-index::after {
     background-color: $color-button;
+    display: block;
+    content: "";
+    height: 2px;
+    position: absolute;
+    bottom: 6px;
+    left: 5px;
+    right: 5px;
   }
+
 }
