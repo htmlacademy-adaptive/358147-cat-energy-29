@@ -186,8 +186,21 @@
     line-height: 20px;
   }
 
+  .form__fieldset {
+    padding-bottom: 40px;
+  }
+
   .form__fieldset--border {
     border-bottom: none;
+  }
+
+  .form__legend--line::before {
+    margin-bottom: -21px;
+  }
+
+  .form__legend-text {
+    font-size: 36px;
+    line-height: 36px;
   }
 
   .form__legend-text--contacts {
@@ -198,6 +211,12 @@
   .form__checkbox-wrapper {
     display: flex;
     flex-wrap: wrap;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  .form__contacts--wrapper {
+    padding-top: 55px;
   }
 
   .form__label--checkbox {
@@ -221,15 +240,19 @@
 
   .form__submit {
     width: 50%;
+    margin-right: 64px;
   }
 
   .form__submit-wrapper {
     display: flex;
-    justify-content: space-between;
   }
 }
 
 @media (min-width: $desktop-width) {
+  .form {
+    padding-bottom: 80px;
+  }
+
   .form__container-info {
     width: 1220px;
     padding: 0 110px;
@@ -248,6 +271,8 @@
     display: grid;
     grid-template-columns: 50% auto;
     gap: 80px;
+    padding-top: 40px;
+    padding-bottom: 40px;
   }
 
   .form__container {
