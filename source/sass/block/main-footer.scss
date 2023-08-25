@@ -12,6 +12,10 @@
   margin: 0;
 }
 
+.main-footer__bg-address-wrapper {
+  background-color: $background-color-card;
+}
+
 .main-footer__addres-wrapper {
   display: flex;
   gap: 20px;
