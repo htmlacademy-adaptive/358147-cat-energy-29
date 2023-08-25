@@ -51,6 +51,8 @@
   }
 }
 
-// @media (min-width: $desktop-width) {
-
-// }
+@media (min-width: $desktop-width) {
+  .button--additional-card {
+    width: 225px;
+  }
+}

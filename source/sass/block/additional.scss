@@ -38,6 +38,15 @@
 }
 
 @media (min-width: $tablet-width) {
+  .additional__wrapper {
+    padding-top: 48px;
+  }
+
+  .additional__list {
+    padding: 0;
+    margin-bottom: 68px;
+  }
+
   .additional__title-text {
     padding: 0 40px;
     display: inline;
@@ -53,5 +62,9 @@
     display: grid;
     grid-template-columns: 1fr 245px;
     gap: 80px;
+  }
+
+  .additional__title-text {
+    margin-left: -40px;
   }
 }

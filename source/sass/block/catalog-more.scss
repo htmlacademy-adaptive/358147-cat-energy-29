@@ -29,7 +29,7 @@
 .catalog-more__text {
   font-size: 12px;
   line-height: 16px;
-  margin-bottom: 5px;
+  margin-bottom: 19px;
 }
 
 @media (min-width: $tablet-width) {
@@ -58,13 +58,13 @@
   }
 }
 
-// @media (min-width: $desktop-width) {
-  .catalog-more__description {
-    padding: 5px 10px;
-    margin-bottom: 18px;
-  }
+//  @media (min-width: $desktop-width) {
+//   .catalog-more__description {
+//     padding: 5px 10px;
+//     margin-bottom: 18px;
+//   }
 
-  .catalog-more__text {
-    padding: 0;
-  }
-// }
+//   .catalog-more__text {
+//     padding: 0;
+//   }
+//  }
