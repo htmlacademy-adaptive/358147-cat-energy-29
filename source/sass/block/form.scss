@@ -74,6 +74,29 @@
   border: 1px solid $border-form;
 }
 
+.form__control:hover {
+  border: 1px solid $border-example;
+}
+
+.form__control--error {
+  border: 1px solid #ff8282;
+  outline: 1px solid #ff8282;
+}
+
+.form__control--email {
+  background-image: url(../../img/icon/icon-email.svg);
+  background-repeat: no-repeat;
+  background-position: right 5px center;
+  padding-right: 25px;
+}
+
+.form__control--tel {
+  background-image: url(../../img/icon/icon-phone.svg);
+  background-repeat: no-repeat;
+  background-position: right 5px center;
+  padding-right: 30px;
+}
+
 .form__legend {
   color: $color-title;
   font-family: "Oswald", "Arial", sans-serif;
