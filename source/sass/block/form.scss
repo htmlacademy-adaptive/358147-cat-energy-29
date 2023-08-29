@@ -27,6 +27,7 @@
   flex-wrap: wrap;
   align-items: center;
   margin-bottom: 8px;
+  position: relative;
 }
 
 .form__label--radio {
@@ -92,17 +93,16 @@
 }
 
 .form__control--email {
-  background-image: url("../../img/icon/icon-email.svg");
-  background-repeat: no-repeat;
-  background-position: right 5px center;
-  padding-right: 25px;
+  padding-right: 30px;
 }
 
 .form__control--tel {
-  background-image: url("../../img/icon/icon-phone.svg");
-  background-repeat: no-repeat;
-  background-position: right 5px center;
   padding-right: 30px;
+}
+
+.form__label svg {
+  position: absolute;
+  right: 5px;
 }
 
 .form__legend {
@@ -182,6 +182,11 @@
 
 @media (min-width: $tablet-width) {
   .form__label {
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  .form__control {
     font-size: 20px;
     line-height: 20px;
   }

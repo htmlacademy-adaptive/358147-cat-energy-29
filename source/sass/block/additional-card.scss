@@ -1,5 +1,5 @@
 .additional-card {
-  padding: 10px 38px 19px 38px;
+  padding: 10px 0px 19px 0;
   border-top: 1px solid $border-example;
 
   &:last-child {
@@ -42,8 +42,7 @@
 
 @media (min-width: $tablet-width) {
   .additional-card {
-    padding-top: 24px;
-    padding-bottom: 30px;
+    padding: 24px 38px 30px 38px;
     border-left: 1px solid $border-example;
     border-right: 1px solid $border-example;
   }

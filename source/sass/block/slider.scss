@@ -1,0 +1,25 @@
+.slider {
+  position: relative;
+  height: 256px;
+}
+
+.slider__before {
+  position: absolute;
+}
+
+.slider__after {
+  position: absolute;
+  overflow: hidden;
+  width: 140px;
+}
+
+.slider__image {
+  max-width: none;
+}
+
+// @media (min-width: $tablet-width) {
+// }
+
+// @media (min-width: $desktop-width) {
+
+// }
