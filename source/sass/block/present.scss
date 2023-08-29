@@ -5,5 +5,65 @@
   color: $color-promo;
   font-size: 16px;
   line-height: 20px;
-  padding: 50px 20px;
+  padding-top: 58px;
+  padding-bottom: 25px;
+
+  &::before {
+    display: block;
+    content: "";
+    width: 78px;
+    height: 80px;
+    background-image: url("../img/icon/gift.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 0 auto;
+    margin-bottom: 50px;
+  }
+}
+
+.present__text {
+  text-align: center;
+}
+
+@media (min-width: $tablet-width) {
+  .present {
+    display: flex;
+    justify-content: space-between;
+    padding: 55px 80px;
+    background-image: url("../img/gift-tablet.jpg");
+
+    &::before {
+      margin: 0;
+    }
+  }
+
+  .present__text {
+    text-align: left;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .present {
+    display: block;
+    background-color: $background-color-promo;
+    background-image: url("../img/bg-present.jpg");
+    background-repeat: no-repeat;
+    color: $color-promo;
+    font-size: 16px;
+    line-height: 20px;
+    padding: 55px 40px;
+    padding-bottom: 25px;
+    align-self: start;
+
+    &::before {
+      display: block;
+      content: "";
+      margin: 0 auto;
+      margin-bottom: 50px;
+    }
+  }
+
+  .present__text {
+    text-align: center;
+  }
 }

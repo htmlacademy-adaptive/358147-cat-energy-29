@@ -14,17 +14,57 @@
   line-height: 36px;
   font-weight: 400;
   color: $color-title;
+  margin: 0;
+  margin-bottom: 22px;
+}
+
+
+.page__title--catalog {
+  margin-bottom: 43px;
+  margin-top: 23px;
 }
 
 .page__title--hero {
   color: $color-promo;
 }
 
+.page__title--form {
+  margin-top: 24px;
+  margin-bottom: 40px;
+}
+
 @media (min-width: $tablet-width) {
+  .page__body {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
   .page__title--hero {
     color: $color-title;
     font-size: 60px;
     line-height: 60px;
     width: 418px;
+    margin-left: 80px;
+    margin-bottom: 35px;
+  }
+
+  .page__title--catalog {
+    font-size: 60px;
+    line-height: 60px;
+    margin-bottom: 84px;
+    margin-top: 33px;
+  }
+
+  .page__title--form {
+    font-size: 60px;
+    line-height: 60px;
+    margin-bottom: 55px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page__title--catalog {
+    margin-bottom: 100px;
+    margin-top: 13px;
   }
 }

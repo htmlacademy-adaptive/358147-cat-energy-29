@@ -1,14 +1,11 @@
-.logo__text--header {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-}
+.logo {
+  &:hover {
+    opacity: 0.6;
+  }
 
-.logo__text--footer {
-  display: block;
-  margin: 0 auto;
-  margin-bottom: 20px;
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 @media (min-width: $tablet-width) {

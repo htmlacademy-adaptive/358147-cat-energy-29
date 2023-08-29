@@ -1,14 +1,37 @@
 .example {
   background-image: linear-gradient($background-color-page 0, $background-color-card 0);
+  padding-top: 23px;
+}
+
+.example__title {
+  margin: 0;
+  margin-bottom: 44px;
 }
 
 @media (min-width: $tablet-width) {
   .example {
-    background-image: linear-gradient($background-color-page 300px, $background-color-card 300px);
+    background-image: linear-gradient(to top, $background-color-card 350px, $background-color-page 350px);
+    border-top: 1px solid $border-catalog;
+    padding-top: 45px;
+  }
+
+  .example__title {
+    margin-bottom: 64px;
+  }
+
+  .example__text {
+    margin-bottom: 30px;
   }
 }
 
 @media (min-width: $desktop-width) {
+  .example {
+    border: none;
+    padding-top: 28px;
+    padding-bottom: 40px;
+    background-image: linear-gradient($background-color-page 150px, $background-color-card 150px);
+  }
+
   .example__container {
     display: flex;
     justify-content: space-between;
@@ -18,7 +41,11 @@
     width: 450px;
   }
 
-  .example {
-    background-image: linear-gradient($background-color-page 100px, $background-color-card 100px);
+  .example__title {
+    margin-bottom: 140px;
+  }
+
+  .example__text {
+    margin-bottom: 71px;
   }
 }

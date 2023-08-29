@@ -7,15 +7,57 @@
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
-  padding: 5px 10px;
+  padding: 10px;
+  text-align: center;
+
+  &:hover {
+    background-color: $background-color-button-hover;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+  }
 }
 
 .button--hero {
   font-size: 14px;
   line-height: 18px;
+  display: block;
+  min-height: 24px;
 }
 
 .button--more {
   background-color: $background-color-card;
   color: $color-page;
+  display: block;
+
+  &:hover {
+    background-color: $border-menu;
+  }
+
+  &:active {
+    color: rgba(65, 65, 65, 0.3);
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .button--hero {
+    font-size: 20px;
+    line-height: 20px;
+    width: 225px;
+    margin-left: 90px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+
+  .form__submit {
+    font-size: 20px;
+    line-height: 20px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .button--additional-card {
+    width: 225px;
+  }
 }

@@ -3,4 +3,12 @@
   line-height: 20px;
   color: $color-page;
   text-decoration: none;
+  display: flex;
+  justify-content: space-between;
+}
+
+@media (min-width: $tablet-width) {
+  .copyright__text {
+    margin-right: 10px;
+  }
 }
