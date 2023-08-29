@@ -77,6 +77,10 @@
   padding: 15px;
   margin-left: 10px;
   border: 1px solid $border-form;
+
+  &::placeholder {
+    opacity: 1;
+  }
 }
 
 .form__control--textarea {
@@ -270,6 +274,7 @@
   .form__fieldset--radio {
     border: 1px solid $border-form;
     padding-bottom: 0;
+    padding-left: 20px;
   }
 
   .form__contacts--wrapper {

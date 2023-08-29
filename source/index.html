@@ -117,17 +117,30 @@
             </li>
           </ul>
         </div>
-
         <div class="slider">
           <div class="slider__slim">
-            <img class="slider__image" src="img/slider-slim-mobile@1x.png"  width="280" height="256" alt="Толстый кот.">
+            <picture>
+              <source media="(min-width: 768px)" srcset="img/slider-slim@1x.png 1x, img/slider-slim@2x.png 2x">
+              <img class="slider__image" src="img/slider-slim-mobile@1x.png" srcset="img/slider-slim-mobile@2x.png 2x"
+                width="280" height="256" alt="Толстый кот.">
+            </picture>
           </div>
           <div class="slider__fat">
-            <img class="slider__image" src="img/slider-fat-mobile@1x.png" width="280" height="256" alt="Худой кот.">
+            <picture>
+              <source media="(min-width: 768px)" srcset="img/slider-fat@1x.png 1x, img/slider-fat@2x.png 2x">
+              <img class="slider__image" src="img/slider-fat-mobile@1x.png" srcset="img/slider-fat-mobile@2x.png 2x"
+                width="280" height="256" alt="Худой кот.">
+            </picture>
           </div>
-          <button class="slider__button" type="button"><span class="visually-hidden">Сравнить котов</span></button>
+          <button class="slider__button" type="button"><span class="visually-hidden">Сравнить котов</span>
+            <div class="slider__control">
+              <svg class="slider__icon" width="24" height="18" viewBox="0 0 24 18" xmlns="http://www.w3.org/2000/svg">
+                <path d="M8 0L0 9L8 18V0Z" />
+                <path d="M24 9L16 0V18L24 9Z" />
+              </svg>
+            </div>
+          </button>
         </div>
-
       </div>
     </section>
   </main>
