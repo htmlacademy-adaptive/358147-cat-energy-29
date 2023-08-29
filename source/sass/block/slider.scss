@@ -72,6 +72,10 @@
   align-items: center;
 }
 
+.slider__icon {
+  fill: #666666;
+}
+
 @media (min-width: $tablet-width) {
   .slider {
     width: 560px;
