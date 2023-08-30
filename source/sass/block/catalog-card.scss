@@ -22,6 +22,11 @@
   width: 140px;
 }
 
+.catalog-card__image {
+  width: 140px;
+  height: 107px;
+}
+
 .catalog-card__link {
   text-decoration: none;
   color: inherit;
@@ -61,11 +66,13 @@
     border-top: none;
     text-align: center;
     padding-bottom: 40px;
-    background-image: linear-gradient(#ffffff 40px, #f2f2f2 40px);
+    background-image: linear-gradient(#ffffff 60px, #f2f2f2 60px);
   }
 
   .catalog-card__image {
     margin-bottom: 25px;
+    width: 200px;
+    height: 210px;
   }
 
   .catalog-card__title {
@@ -106,5 +113,12 @@
 
   .catalog-card__content-wrapper {
     width: auto;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .catalog-card__image {
+    width: 169px;
+    height: 210px;
   }
 }
