@@ -91,18 +91,40 @@
   border: 1px solid $border-example;
 }
 
-.form__control--error {
-  border: 1px solid #ff8282;
-  outline: 1px solid #ff8282;
-}
-
 .form__control--email {
   padding-right: 30px;
+
+  &:focus + svg {
+    stroke: #68b738;
+  }
 }
 
 .form__control--tel {
   padding-right: 30px;
+
+  &:focus + svg {
+    stroke: #68b738;
+  }
 }
+
+.form__control--error {
+  border: 1px solid #ff8282;
+  outline: 1px solid #ff8282;
+
+  & + svg {
+    stroke: #ff8282;
+  }
+
+  &:hover {
+    border: 1px solid #ff8282;
+    outline: 1px solid #ff8282;
+  }
+
+  &:focus + svg {
+    stroke: #ff8282;
+  }
+}
+
 
 .form__label svg {
   position: absolute;

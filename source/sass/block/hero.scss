@@ -11,11 +11,18 @@
 
 .hero__bg-wrapper {
   background-color: #63a63a;
-  background-image: url("../img/bg-hero.jpg");
+  background-image: url("../img/bg-hero@1x.jpg");
   background-repeat: no-repeat;
   background-position: center top;
   padding-top: 27px;
   padding-bottom: 150px;
+}
+
+@media (min-resolution: 2dppx) {
+  .hero__bg-wrapper {
+    background-image: url("../img/bg-hero@2x.jpg");
+    background-size: 320px 302px;
+  }
 }
 
 .hero__slogan {
@@ -27,6 +34,8 @@
 
 .hero__image {
   margin-top: -137px;
+  width: 280px;
+  height: 270px;
 }
 
 @media (min-width: $tablet-width) {
@@ -64,13 +73,21 @@
     position: absolute;
     z-index: -1;
     top: 0;
+    width: 709px;
+    height: 609px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .hero {
-    background: url("../img/bg-hero-desc.jpg") no-repeat bottom right, linear-gradient(90deg, $background-color-page 50%, #63a63a 50%);
+    background: url("../img/bg-hero-desk@1x.jpg") no-repeat bottom right, linear-gradient(90deg, $background-color-page 50%, #63a63a 50%);
     margin-top: -310px;
+  }
+
+  @media (min-resolution: 2dppx) {
+    .hero {
+      background: url("../img/bg-hero-desk@2x.jpg") no-repeat bottom right/720px 694px, linear-gradient(90deg, $background-color-page 50%, #63a63a 50%);
+    }
   }
 
   .hero__wrapper {
@@ -100,7 +117,9 @@
   .hero__image {
     z-index: 1;
     top: auto;
-    bottom: 160px;
-    right: 522px;
+    bottom: 30px;
+    right: 320px;
+    width: 552px;
+    height: 499px;
   }
 }
