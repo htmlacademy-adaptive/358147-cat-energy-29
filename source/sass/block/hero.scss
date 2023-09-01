@@ -86,7 +86,7 @@
 
   @media (min-resolution: 2dppx) {
     .hero {
-      background: url("../img/bg-hero-desk@2x.jpg") no-repeat bottom right 720px 694px, linear-gradient(90deg, $background-color-page 50%, #63a63a 50%);
+      background: url("../img/bg-hero-desk@2x.jpg") no-repeat bottom right/720px 694px, linear-gradient(90deg, $background-color-page 50%, #63a63a 50%);
     }
   }
 
