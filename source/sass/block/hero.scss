@@ -93,7 +93,7 @@
 
   .hero__wrapper {
     width: 1220px;
-    padding: 0 110px;
+    padding: 0 80px;
     padding-top: 300px;
     padding-bottom: 185px;
     margin: 0 auto;
@@ -113,6 +113,10 @@
   .hero__bg-wrapper {
     padding-top: 55px;
     padding-bottom: 52px;
+  }
+
+  .hero__slogan {
+    max-width: 400px;
   }
 
   .hero__image {
