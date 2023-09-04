@@ -51,21 +51,22 @@
 
   .hero__container--content {
     min-height: 560px;
-    padding-top: 10px;
+    padding-top: 30px;
     position: relative;
   }
 
   .hero__bg-wrapper {
     background-color: transparent;
     background-image: none;
-    padding-top: 40px;
+    padding-top: 33px;
     padding-bottom: 20px;
   }
 
   .hero__slogan {
     font-size: 20px;
     line-height: 20px;
-    margin-left: 88px;
+    margin: 0;
+    margin-left: 80px;
   }
 
   .hero__image {
@@ -110,15 +111,15 @@
   }
 
   .hero__bg-wrapper {
-    padding-top: 60px;
-    padding-bottom: 32px;
+    padding-top: 55px;
+    padding-bottom: 52px;
   }
 
   .hero__image {
     z-index: 1;
     top: auto;
-    bottom: 30px;
-    right: 320px;
+    bottom: 50px;
+    right: 330px;
     width: 552px;
     height: 499px;
   }

@@ -14,7 +14,7 @@
   width: 124px;
   text-align: center;
   padding-top: 16px;
-  padding-bottom: 16px;
+  padding-bottom: 11px;
 }
 
 .example-list__price {
@@ -23,6 +23,8 @@
   font-size: 14px;
   line-height: 20px;
   text-transform: uppercase;
+  margin-top: 20px;
+  margin-bottom: 8px;
 }
 
 .example-list__item--price {
@@ -56,10 +58,13 @@
   .example-list {
     align-items: center;
     justify-content: left;
+    margin-bottom: 105px;
   }
 
   .example-list__item {
     width: 160px;
+    padding-top: 13px;
+    padding-bottom: 17px;
   }
 
   .example-list__info {
@@ -90,15 +95,22 @@
     width: 180px;
     text-align: left;
     margin-left: auto;
+    padding: 0;
   }
 
   .example-list__price {
     font-size: 20px;
+    line-height: 27px;
     text-align: end;
+    margin: 0;
   }
 }
 
 @media (min-width: $desktop-width) {
+  .example-list {
+    margin-bottom: 0;
+  }
+
   .example-list__text {
     background-color: $background-color-card;
   }
@@ -109,6 +121,6 @@
 
   .example-list__price {
     text-align: left;
-    margin-top: 46px;
+    margin-top: 56px;
   }
 }

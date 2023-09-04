@@ -18,13 +18,13 @@
 
 .main-footer__addres-wrapper {
   display: flex;
-  gap: 20px;
+  gap: 16px;
   padding-top: 27px;
   padding-bottom: 27px;
 }
 
 .main-footer__addres {
-  line-height: 20px;
+  line-height: 24px;
   font-style: normal;
 }
 
@@ -46,7 +46,7 @@
   display: block;
   border-bottom: 1px solid $border-features;
   text-align: center;
-  padding-bottom: 15px;
+  padding-bottom: 17px;
   cursor: pointer;
 }
 
@@ -57,19 +57,19 @@
 .main-footer__copyright {
   display: block;
   border-top: 1px solid $border-features;
-  padding-top: 23px;
+  padding-top: 20px;
 }
 
 @media (min-width: $tablet-width) {
   .main-footer__social-wrapper {
     display: flex;
     justify-content: space-between;
-    padding: 65px 0;
+    padding: 72px 0;
   }
 
   .main-footer__addres-wrapper {
     padding-top: 60px;
-    padding-bottom: 60px;
+    padding-bottom: 62px;
     justify-content: space-between;
   }
 
@@ -83,7 +83,7 @@
   .main-footer__addres {
     width: 160px;
     font-size: 16px;
-    line-height: 24px;
+    line-height: 21px;
     text-align: right;
     margin-right: 40px;
   }

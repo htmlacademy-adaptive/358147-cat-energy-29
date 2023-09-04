@@ -58,13 +58,13 @@
 }
 
 .slider__control {
-  width: 40px;
-  height: 40px;
+  width: 36px;
+  height: 36px;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
   position: absolute;
-  border: 3px solid #666666;
+  border: 2px solid #666666;
   border-radius: 50%;
   background-color: #ffffff;
   display: flex;
@@ -89,16 +89,17 @@
   }
 
   .slider__fat {
-    background-image: linear-gradient(to top, $background-color-card 350px, $background-color-page 350px);
+    background-image: linear-gradient(to top, $background-color-card 359px, $background-color-page 359px);
   }
 }
 
 @media (min-width: $desktop-width) {
   .slider {
     height: 512px;
+    margin: 0;
   }
 
   .slider__fat {
-    background-image: linear-gradient($background-color-page 121px, $background-color-card 121px);
+    background-image: linear-gradient($background-color-page 135px, $background-color-card 135px);
   }
 }
