@@ -10,7 +10,7 @@
     width: 30px;
     height: 30px;
     margin: 0 auto;
-    margin-bottom: 20px;
+    margin-bottom: 22px;
     background-image: url("../img/icon/plus.svg");
     background-repeat: no-repeat;
     background-position: center;
@@ -39,7 +39,7 @@
     &::before {
       width: 60px;
       height: 60px;
-      margin-bottom: 44px;
+      margin-bottom: 46px;
     }
   }
 
@@ -58,13 +58,21 @@
   }
 }
 
-//  @media (min-width: $desktop-width) {
-//   .catalog-more__description {
-//     padding: 5px 10px;
-//     margin-bottom: 18px;
-//   }
+ @media (min-width: $desktop-width) {
+  .catalog-more {
+    &::before {
+      margin-bottom: 42px;
+    }
+  }
 
-//   .catalog-more__text {
-//     padding: 0;
-//   }
-//  }
+  .catalog-more__description {
+    padding: 0;
+    margin-bottom: 22px;
+  }
+
+  .catalog-more__text {
+    margin: 0;
+    margin-bottom: 90px;
+    padding: 0;
+  }
+ }

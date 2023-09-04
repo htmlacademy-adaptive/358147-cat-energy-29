@@ -1,6 +1,6 @@
 .catalog {
   padding-bottom: 10px;
-  margin-bottom: 35px;
+  margin-bottom: 29px;
 }
 
 .catalog__list {
@@ -16,19 +16,25 @@
     margin: 0 auto;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 60px;
+    column-gap: 60px;
+    row-gap: 70px;
   }
 
   .catalog {
-    margin-bottom: 80px;
+    margin-bottom: 81px;
   }
 }
 
 @media (min-width: $desktop-width) {
+  .catalog {
+    margin-bottom: 87px;
+  }
+
   .catalog__list {
     width: 1220px;
     padding: 0 110px;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    gap: 80px;
+    column-gap: 80px;
+    row-gap: 73px;
   }
 }

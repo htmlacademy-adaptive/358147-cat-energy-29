@@ -1,5 +1,5 @@
 .additional {
-  padding-bottom: 20px;
+  padding-bottom: 36px;
 }
 
 .additional__title {
@@ -23,7 +23,7 @@
     height: 2px;
     width: 100%;
     background-color: $background-color-promo;
-    margin-bottom: -22px;
+    margin-bottom: -17px;
   }
 }
 
@@ -32,14 +32,24 @@
   margin-left: -20px;
   background-color: $background-color-page;
   display: block;
-  width: 240px;
+  width: 228px;
   font-size: 24px;
   line-height: 24px;
 }
 
 @media (min-width: $tablet-width) {
+  .additional {
+    padding-bottom: 76px;
+  }
+
   .additional__wrapper {
-    padding-top: 48px;
+    padding-top: 44px;
+  }
+
+  .additional__title--line {
+    &::before {
+      margin-bottom: -23px;
+    }
   }
 
   .additional__list {
@@ -58,6 +68,10 @@
 }
 
 @media (min-width: $desktop-width) {
+  .additional {
+    padding-bottom: 18px;
+  }
+
   .additional__wrapper {
     display: grid;
     grid-template-columns: 1fr 245px;
