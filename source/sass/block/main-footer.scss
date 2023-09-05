@@ -48,6 +48,14 @@
   text-align: center;
   padding-bottom: 17px;
   cursor: pointer;
+
+  &:hover svg {
+    fill: #3e3e3e;
+  }
+
+  &:active svg {
+    fill: #6b6b6b;
+  }
 }
 
 .main-footer__social-wrapper {

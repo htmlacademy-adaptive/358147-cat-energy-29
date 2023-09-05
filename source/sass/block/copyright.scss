@@ -6,6 +6,14 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  &:hover svg {
+    fill: #68b738;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 @media (min-width: $tablet-width) {
