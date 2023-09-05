@@ -58,7 +58,7 @@
   }
 }
 
- @media (min-width: $desktop-width) {
+@media (min-width: $desktop-width) {
   .catalog-more {
     &::before {
       margin-bottom: 42px;
@@ -75,4 +75,4 @@
     margin-bottom: 90px;
     padding: 0;
   }
- }
+}
