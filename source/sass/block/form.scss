@@ -11,11 +11,13 @@
 
 .form__fieldset--border {
   border-bottom: 1px solid $border-catalog;
-  padding-bottom: 10px;
+  padding-bottom: 8px;
 }
 
 .form__fieldset--radio {
-  padding-top: 20px;
+  padding-top: 22px;
+  padding-bottom: 7px;
+  margin-bottom: 15px;
 }
 
 .form__label {
@@ -26,12 +28,12 @@
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  margin-bottom: 8px;
+  margin-bottom: 14px;
   position: relative;
 }
 
 .form__label--radio {
-  margin-bottom: 13px;
+  margin-bottom: 11px;
 }
 
 .form__radio-mark {
@@ -41,10 +43,10 @@
   border: 1px solid $border-example;
   border-radius: 50%;
   position: relative;
-  margin-right: 10px;
+  margin-right: 13px;
 }
 
-.form__radio:checked + .form__radio-mark::before {
+.form__radio:checked+.form__radio-mark::before {
   position: absolute;
   content: "";
   width: 13px;
@@ -56,11 +58,11 @@
   transform: translate(-50%, -50%);
 }
 
-.form__radio:hover + .form__radio-mark {
+.form__radio:hover+.form__radio-mark {
   border: 1px solid #bababa;
 }
 
-.form__radio:focus + .form__radio-mark {
+.form__radio:focus+.form__radio-mark {
   outline: 1px solid $color-page;
 }
 
@@ -74,8 +76,8 @@
   line-height: 18px;
   text-transform: uppercase;
   flex-grow: 1;
-  padding: 15px;
-  margin-left: 10px;
+  padding: 13px;
+  margin-left: 14px;
   border: 1px solid $border-form;
 
   &::placeholder {
@@ -84,7 +86,9 @@
 }
 
 .form__control--textarea {
-  min-height: 150px;
+  min-height: 120px;
+  margin: 0;
+  margin-top: 4px;
 }
 
 .form__control:hover {
@@ -92,17 +96,17 @@
 }
 
 .form__control--email {
-  padding-right: 30px;
+  padding-right: 40px;
 
-  &:focus + svg {
+  &:focus+svg {
     stroke: #68b738;
   }
 }
 
 .form__control--tel {
-  padding-right: 30px;
+  padding-right: 40px;
 
-  &:focus + svg {
+  &:focus+svg {
     stroke: #68b738;
   }
 }
@@ -111,7 +115,7 @@
   border: 1px solid #ff8282;
   outline: 1px solid #ff8282;
 
-  & + svg {
+  &+svg {
     stroke: #ff8282;
   }
 
@@ -120,15 +124,14 @@
     outline: 1px solid #ff8282;
   }
 
-  &:focus + svg {
+  &:focus+svg {
     stroke: #ff8282;
   }
 }
 
-
 .form__label svg {
   position: absolute;
-  right: 5px;
+  right: 13px;
 }
 
 .form__legend {
@@ -141,23 +144,23 @@
 
 .form__checkbox-mark {
   display: block;
-  width: 30px;
-  height: 30px;
+  width: 28px;
+  height: 28px;
   border: 1px solid $border-example;
-  margin-right: 10px;
+  margin-right: 13px;
 }
 
-.form__checkbox:checked + .form__checkbox-mark {
+.form__checkbox:checked+.form__checkbox-mark {
   background-image: url("../img/icon/tick.svg");
   background-repeat: no-repeat;
   background-position: center;
 }
 
-.form__checkbox:hover + .form__checkbox-mark {
+.form__checkbox:hover+.form__checkbox-mark {
   border: 1px solid #bababa;
 }
 
-.form__checkbox:focus + .form__checkbox-mark {
+.form__checkbox:focus+.form__checkbox-mark {
   outline: 1px solid $color-page;
 }
 
@@ -165,11 +168,19 @@
   opacity: 0.3;
 }
 
+.form__checkbox-wrapper {
+  margin-top: 32px;
+  margin-bottom: 15px;
+}
+
 .form__label--checkbox {
-  margin-bottom: 14px;
+  margin-bottom: 13px;
 }
 
 .form__legend--line {
+  margin-top: 16px;
+  margin-bottom: 31px;
+
   &::before {
     content: " ";
     display: block;
@@ -192,7 +203,7 @@
 }
 
 .form__submit-wrapper {
-  padding-top: 15px;
+  padding-top: 21px;
 }
 
 .form__legend-text--contacts {
@@ -204,17 +215,25 @@
   font-size: 14px;
   line-height: 16px;
   text-align: center;
+  margin-top: 20px;
 }
 
 @media (min-width: $tablet-width) {
+  .form {
+    padding-bottom: 60px;
+  }
+
   .form__label {
     font-size: 20px;
     line-height: 20px;
+    margin-bottom: 20px;
   }
 
   .form__control {
     font-size: 20px;
     line-height: 20px;
+    padding: 10px;
+    padding-left: 17px;
   }
 
   .form__fieldset {
@@ -223,6 +242,15 @@
 
   .form__fieldset--border {
     border-bottom: none;
+  }
+
+  .form__fieldset--radio {
+    padding-top: 15px;
+    margin-bottom: 19px;
+  }
+
+  .form__label--radio {
+    margin-bottom: 11px;
   }
 
   .form__legend--line::before {
@@ -242,40 +270,72 @@
   .form__checkbox-wrapper {
     display: flex;
     flex-wrap: wrap;
-    padding-top: 50px;
-    padding-bottom: 50px;
-  }
-
-  .form__contacts--wrapper {
-    padding-top: 55px;
+    margin-top: 54px;
+    column-gap: 61px;
+    row-gap: 32px;
   }
 
   .form__label--checkbox {
-    width: 50%;
+    width: 283px;
+    margin: 0;
+  }
+
+  .form__container {
+    width: 628px;
+    padding: 0 40px;
+  }
+
+  .form__contacts-wrapper {
+    padding-top: 42px;
+  }
+
+  .form__container--radio {
+    border: 1px solid $border-form;
+    width: 574px;
+    padding: 20px 27px 16px 27px;
   }
 
   .form__radio-mark {
     width: 40px;
     height: 40px;
+    margin-right: 17px;
   }
 
-  .form__radio:checked + .form__radio-mark::before {
+  .form__radio:checked+.form__radio-mark::before {
     width: 18px;
     height: 18px;
   }
 
+  .form__control--textarea {
+    margin-top: 54px;
+    padding: 14px;
+    padding-left: 19px;
+    min-height: 145px;
+  }
+
   .form__checkbox-mark {
-    width: 40px;
-    height: 40px;
+    width: 38px;
+    height: 38px;
+    margin-right: 20px;
   }
 
   .form__submit {
-    width: 50%;
-    margin-right: 64px;
+    width: 284px;
+    margin-right: 57px;
+    font-size: 20px;
+    line-height: 20px;
+    min-height: 53px;
   }
 
   .form__submit-wrapper {
     display: flex;
+  }
+
+  .form__info {
+    font-size: 16px;
+    line-height: 16px;
+    text-align: start;
+    margin-top: 15px;
   }
 }
 
@@ -294,12 +354,21 @@
   }
 
   .form__fieldset--radio {
-    border: 1px solid $border-form;
     padding-bottom: 0;
     padding-left: 20px;
   }
 
-  .form__contacts--wrapper {
+  .form__container {
+    width: 1220px;
+    padding: 0 80px;
+  }
+
+  .form__container--radio {
+    width: auto;
+    padding: 20px 27px 16px 27px;
+  }
+
+  .form__contacts-wrapper {
     display: grid;
     grid-template-columns: 50% auto;
     gap: 80px;
@@ -307,10 +376,9 @@
     padding-bottom: 40px;
   }
 
-  .form__container {
+  .form__name-wrapper {
     width: auto;
     padding: 0;
-    margin: 0;
   }
 
   .form__label--checkbox {

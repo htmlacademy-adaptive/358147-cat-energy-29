@@ -2,13 +2,14 @@
   font-family: "Oswald", "Arial", sans-serif;
   text-transform: uppercase;
   color: $color-title;
-  margin-bottom: 35px;
+  margin-bottom: 27px;
 }
 
 @media (min-width: $tablet-width) {
   .content-form__text {
     font-size: 20px;
     line-height: 30px;
+    margin-bottom: 56px;
   }
 }
 

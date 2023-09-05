@@ -37,10 +37,10 @@
     </nav>
   </header>
   <main class="content-form">
-    <div class="container container--form">
+    <div class="container form__container">
       <h1 class="page__title page__title--form">Подбор программы</h1>
     </div>
-    <div class="container container--form">
+    <div class="container form__container">
       <p class="content-form__text">Заполните анкету, и мы подберем<br>
         программу питания для вашего кота
       </p>
@@ -49,7 +49,7 @@
       <div class="form__container-info">
         <fieldset class="form__fieldset form__fieldset--border">
           <legend class="form__legend"><span class="visually-hidden">Информация о коте</span></legend>
-          <div class="container container--form form__container">
+          <div class="container form__container form__name-wrapper">
             <label class="form__label">
               ИМЯ:*<input class="form__control form__control--text" type="text" name="name" placeholder="барсик"
                 required>
@@ -65,7 +65,7 @@
         </fieldset>
         <fieldset class="form__fieldset form__fieldset--radio form__fieldset--border">
           <legend class="form__legend"><span class="visually-hidden">Выбор программы</span></legend>
-          <div class="container container--form form__container">
+          <div class="container form__container form__container--radio">
             <label class="form__label form__label--radio">
               <input class="form__radio visually-hidden" type="radio" name="program" value="slim" checked>
               <span class="form__radio-mark"></span>
@@ -86,10 +86,10 @@
       </div>
       <fieldset class="form__fieldset">
         <h2 class="form__legend form__legend--line">
-          <div class="container container--form"><span class="form__legend-text form__legend-text--contacts">Контактные данные
+          <div class="container form__container"><span class="form__legend-text form__legend-text--contacts">Контактные данные
               (владельца кота)</span></div>
         </h2>
-        <div class="container container--form form__contacts--wrapper">
+        <div class="container form__container form__contacts-wrapper">
           <label class="form__label">
             E-mail:*<input class="form__control form__control--email" type="email" name="email"
               placeholder="kuklachev@gmail.com" required>
@@ -112,9 +112,9 @@
       </fieldset>
       <fieldset class="form__fieldset">
         <h2 class="form__legend form__legend--line">
-          <div class="container container--form"><span class="form__legend-text">Комментарий</span></div>
+          <div class="container form__container"><span class="form__legend-text">Комментарий</span></div>
         </h2>
-        <div class="container container--form">
+        <div class="container form__container">
           <label class="form__label">
             <textarea class="form__control form__control--textarea" name="comment"
               placeholder="Расскажите обо всех повадках кота"></textarea>
@@ -123,9 +123,9 @@
       </fieldset>
       <fieldset class="form__fieldset">
         <h2 class="form__legend form__legend--line">
-          <div class="container container--form"><span class="form__legend-text">Дополнительно</span></div>
+          <div class="container form__container"><span class="form__legend-text">Дополнительно</span></div>
         </h2>
-        <div class="container container--form form__checkbox-wrapper">
+        <div class="container form__container form__checkbox-wrapper">
 
           <label class="form__label form__label--checkbox">
             <input class="form__checkbox visually-hidden" name="sugar" type="checkbox" checked>
@@ -153,7 +153,7 @@
 
         </div>
       </fieldset>
-      <div class="container container--form form__submit-wrapper">
+      <div class="container form__container form__submit-wrapper">
         <button class="form__submit button" type="submit">отправить заявку</button>
         <p class="form__info">* — Обязательные поля</p>
       </div>
