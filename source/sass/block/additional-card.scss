@@ -1,5 +1,5 @@
 .additional-card {
-  padding: 10px 0 19px 0;
+  padding: 13px 0 16px 0;
   border-top: 1px solid $border-example;
 
   &:last-child {
@@ -42,13 +42,19 @@
 
 @media (min-width: $tablet-width) {
   .additional-card {
-    padding: 24px 38px 30px 38px;
+    padding: 24px 38px 28px 38px;
     border-left: 1px solid $border-example;
     border-right: 1px solid $border-example;
   }
 
+  .additional-card__price {
+    min-width: 42px;
+    text-align: end;
+  }
+
   .additional-card__price-wrapper {
     margin-bottom: 24px;
+    align-items: flex-end;
   }
 
   .additional-card__title {
@@ -56,7 +62,7 @@
     margin: 0;
     margin-right: auto;
     font-size: 20px;
-    line-height: 20px;
+    line-height: 22px;
     text-transform: uppercase;
   }
 }
@@ -67,8 +73,8 @@
     display: flex;
     justify-content: space-between;
     padding: 0;
-    padding-top: 20px;
-    padding-bottom: 10px;
+    padding-top: 17px;
+    padding-bottom: 15px;
     align-items: center;
     border-left: none;
     border-right: none;
@@ -78,10 +84,14 @@
     padding-top: 42px;
   }
 
+  .additional-card__price {
+    text-align: start;
+  }
+
   .additional-card__price-wrapper {
     display: grid;
     grid-template-columns: 300px 220px 1fr;
-    gap: 20px;
+    gap: 25px;
     margin: 0;
   }
 

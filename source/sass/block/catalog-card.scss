@@ -66,11 +66,11 @@
     border-top: none;
     text-align: center;
     padding-bottom: 40px;
-    background-image: linear-gradient(#ffffff 60px, #f2f2f2 60px);
+    background-image: linear-gradient(#ffffff 70px, #f2f2f2 70px);
   }
 
   .catalog-card__image {
-    margin-bottom: 25px;
+    margin-bottom: 18px;
     width: 200px;
     height: 210px;
   }
@@ -92,7 +92,7 @@
   .catalog-card__list {
     font-size: 16px;
     line-height: 20px;
-    margin-bottom: 30px;
+    margin-bottom: 31px;
   }
 
   .catalog-card__button {
@@ -103,6 +103,7 @@
   .catalog-card--more {
     background-image: none;
     border: 1px solid #cdcdcdcd;
+    margin-top: 72px;
   }
 
   .catalog-card__wrapper {
@@ -120,5 +121,19 @@
   .catalog-card__image {
     width: 169px;
     height: 210px;
+    margin-bottom: 9px;
+  }
+
+  .catalog-card__title {
+    margin-bottom: 24px;
+  }
+
+  .catalog-card__list {
+    margin-bottom: 35px;
+  }
+
+  .catalog-card__list-wrapper {
+    padding-bottom: 5px;
+    margin-bottom: 7px;
   }
 }

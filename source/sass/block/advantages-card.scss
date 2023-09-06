@@ -2,6 +2,7 @@
   padding-left: 80px;
   min-height: 60px;
   position: relative;
+  padding-top: 2px;
 
   &::after {
     display: block;
@@ -40,11 +41,11 @@
 @media (min-width: $tablet-width) {
   .advantages-card {
     padding-left: 0;
-    padding-top: 112px;
+    padding-top: 114px;
     position: relative;
     min-height: 150px;
     font-size: 16px;
-    line-height: 20px;
+    line-height: 24px;
 
     &::before {
       counter-increment: advantages;
@@ -55,8 +56,8 @@
       font-family: "Oswald", "Arial", sans-serif;
       color: $background-color-card;
       position: absolute;
-      top: -50px;
-      right: 100px;
+      top: -38px;
+      right: 78px;
       z-index: -1;
     }
 
@@ -67,11 +68,14 @@
   }
 
   .advantages-card__text {
-    width: 225px;
+    width: 250px;
   }
 }
 
-
-// @media (min-width: $desktop-width) {
-
-// }
+@media (min-width: $desktop-width) {
+  .advantages-card {
+    &::before {
+      right: 6px;
+    }
+  }
+}
