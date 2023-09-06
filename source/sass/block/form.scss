@@ -46,7 +46,7 @@
   margin-right: 13px;
 }
 
-.form__radio:checked+.form__radio-mark::before {
+.form__radio:checked + .form__radio-mark::before {
   position: absolute;
   content: "";
   width: 13px;
@@ -58,11 +58,11 @@
   transform: translate(-50%, -50%);
 }
 
-.form__radio:hover+.form__radio-mark {
+.form__radio:hover + .form__radio-mark {
   border: 1px solid #bababa;
 }
 
-.form__radio:focus+.form__radio-mark {
+.form__radio:focus + .form__radio-mark {
   outline: 1px solid $color-page;
 }
 
@@ -98,7 +98,7 @@
 .form__control--email {
   padding-right: 40px;
 
-  &:focus+svg {
+  &:focus + svg {
     stroke: #68b738;
   }
 }
@@ -106,7 +106,7 @@
 .form__control--tel {
   padding-right: 40px;
 
-  &:focus+svg {
+  &:focus + svg {
     stroke: #68b738;
   }
 }
@@ -115,7 +115,7 @@
   border: 1px solid #ff8282;
   outline: 1px solid #ff8282;
 
-  &+svg {
+  & + svg {
     stroke: #ff8282;
   }
 
@@ -124,7 +124,7 @@
     outline: 1px solid #ff8282;
   }
 
-  &:focus+svg {
+  &:focus + svg {
     stroke: #ff8282;
   }
 }
@@ -150,17 +150,17 @@
   margin-right: 13px;
 }
 
-.form__checkbox:checked+.form__checkbox-mark {
+.form__checkbox:checked + .form__checkbox-mark {
   background-image: url("../img/icon/tick.svg");
   background-repeat: no-repeat;
   background-position: center;
 }
 
-.form__checkbox:hover+.form__checkbox-mark {
+.form__checkbox:hover + .form__checkbox-mark {
   border: 1px solid #bababa;
 }
 
-.form__checkbox:focus+.form__checkbox-mark {
+.form__checkbox:focus + .form__checkbox-mark {
   outline: 1px solid $color-page;
 }
 
@@ -301,7 +301,7 @@
     margin-right: 17px;
   }
 
-  .form__radio:checked+.form__radio-mark::before {
+  .form__radio:checked + .form__radio-mark::before {
     width: 18px;
     height: 18px;
   }
