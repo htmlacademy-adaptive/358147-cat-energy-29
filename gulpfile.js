@@ -58,7 +58,7 @@ return gulp.src('source/img/**/*.{png,jpg}')
 // WebP
 
 const createWebp = () => {
-return gulp.src('source/img/**/*.{png,jpg}')
+return gulp.src(['source/img/**/*.{png,jpg}', '!source/img/bg/*.{png,jpg}'])
 .pipe(squoosh({
 webp: {}
 }))
