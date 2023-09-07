@@ -31,6 +31,7 @@
 .main-footer__map {
   display: block;
   margin: auto;
+  width: 100%;
 }
 
 .main-footer__social-list {
@@ -67,6 +68,8 @@
   border-top: 1px solid $border-features;
   padding-top: 20px;
 }
+
+
 
 @media (min-width: $tablet-width) {
   .main-footer__social-wrapper {

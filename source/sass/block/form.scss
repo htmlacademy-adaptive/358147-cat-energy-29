@@ -280,19 +280,8 @@
     margin: 0;
   }
 
-  .form__container {
-    width: 628px;
-    padding: 0 40px;
-  }
-
   .form__contacts-wrapper {
     padding-top: 42px;
-  }
-
-  .form__container--radio {
-    border: 1px solid $border-form;
-    width: 574px;
-    padding: 20px 27px 16px 27px;
   }
 
   .form__radio-mark {
@@ -344,30 +333,10 @@
     padding-bottom: 80px;
   }
 
-  .form__container-info {
-    width: 1220px;
-    padding: 0 80px;
-    margin: 0 auto;
-    margin-bottom: 7px;
-    display: grid;
-    grid-template-columns: 50% auto;
-    gap: 42px;
-  }
-
   .form__fieldset--radio {
     padding-bottom: 0;
     padding: 0;
     padding-top: 10px;
-  }
-
-  .form__container {
-    width: 1220px;
-    padding: 0 80px;
-  }
-
-  .form__container--radio {
-    width: auto;
-    padding: 23px 27px 16px 27px;
   }
 
   .form__contacts-wrapper {
