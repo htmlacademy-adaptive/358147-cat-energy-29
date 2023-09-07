@@ -13,12 +13,12 @@
   width: 24px;
   height: 24px;
   cursor: pointer;
-  background-image: url("../img/icon/nav-opened.svg");
+  background-image: url("../img/nav-opened.svg");
   background-repeat: no-repeat;
   background-position: center;
 
   &--open {
-    background-image: url("../img/icon/nav-closed.svg");
+    background-image: url("../img/nav-closed.svg");
   }
 }
 
