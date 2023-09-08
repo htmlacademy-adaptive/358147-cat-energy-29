@@ -72,6 +72,7 @@
 @media (min-width: $tablet-width) {
   .main-footer__social-wrapper {
     display: flex;
+    flex-wrap: wrap;
     padding: 57px 0;
   }
 
@@ -132,8 +133,8 @@
   }
 
   .main-footer__addres {
-     text-align: left;
-     margin: 0;
+    text-align: left;
+    margin: 0;
   }
 
   .main-footer__social-wrapper {
