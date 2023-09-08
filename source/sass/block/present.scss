@@ -67,15 +67,14 @@
     color: $color-promo;
     font-size: 16px;
     line-height: 20px;
-    padding: 55px 40px;
-    padding-bottom: 25px;
+    padding: 55px 40px 40px 40px;
     align-self: start;
 
     &::before {
       display: block;
       content: "";
       margin: 0 auto;
-      margin-bottom: 50px;
+      margin-bottom: 45px;
     }
   }
 

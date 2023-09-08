@@ -1,6 +1,7 @@
 .catalog {
   padding-bottom: 10px;
   margin-bottom: 29px;
+  border-top: 1px solid $border-catalog;
 }
 
 .catalog__list {
@@ -22,6 +23,7 @@
 
   .catalog {
     margin-bottom: 81px;
+    border: none;
   }
 }
 
@@ -35,6 +37,6 @@
     padding: 0 80px;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     column-gap: 80px;
-    row-gap: 73px;
+    row-gap: 71px;
   }
 }
