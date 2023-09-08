@@ -125,8 +125,22 @@
 @media (min-width: $desktop-width) {
   .main-footer__addres-wrapper {
     position: absolute;
-    top: 90px;
-    // left: calc(50% - 570px);
+    top: 96px;
+    width: 449px;
+    padding: 60px 77px 59px 40px;
     background-color: $background-color-page;
+  }
+
+  .main-footer__addres {
+     text-align: left;
+     margin: 0;
+  }
+
+  .main-footer__social-wrapper {
+    padding: 69px 0;
+  }
+
+  .main-footer__logo {
+    margin-right: 416px;
   }
 }

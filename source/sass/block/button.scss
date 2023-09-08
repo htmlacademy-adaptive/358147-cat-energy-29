@@ -53,6 +53,10 @@
 }
 
 @media (min-width: $desktop-width) {
+  .button--hero {
+    margin-left: 80px;
+  }
+
   .button--additional-card {
     width: 225px;
   }

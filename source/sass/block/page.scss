@@ -64,6 +64,10 @@
 }
 
 @media (min-width: $desktop-width) {
+  .page__title--hero {
+    margin-left: 79px;
+  }
+
   .page__title--catalog {
     margin-bottom: 90px;
     margin-top: 13px;

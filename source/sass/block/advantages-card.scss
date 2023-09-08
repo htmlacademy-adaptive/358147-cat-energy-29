@@ -81,5 +81,9 @@
     &::before {
       right: 6px;
     }
+
+    &:first-child::before {
+      right: 25px;
+    }
   }
 }
