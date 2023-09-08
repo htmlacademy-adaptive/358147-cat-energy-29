@@ -1,5 +1,5 @@
 .example {
-  background-image: linear-gradient($background-color-page 0, $background-color-card 0);
+  background-image: linear-gradient($background-color-page 0, $background-color-example 0);
   padding-top: 23px;
   padding-bottom: 41px;
 }
@@ -15,7 +15,7 @@
 
 @media (min-width: $tablet-width) {
   .example {
-    background-image: linear-gradient(to top, $background-color-card 460px, $background-color-page 460px);
+    background-image: linear-gradient(to top, $background-color-example 460px, $background-color-page 460px);
     border-top: 1px solid $border-catalog;
     padding-top: 45px;
     padding-bottom: 101px;
@@ -35,7 +35,7 @@
     border: none;
     padding-top: 25px;
     padding-bottom: 72px;
-    background-image: linear-gradient($background-color-page 160px, $background-color-card 160px);
+    background-image: linear-gradient($background-color-page 160px, $background-color-example 160px);
   }
 
   .example__container {

@@ -44,7 +44,7 @@
 .example-list__text {
   font-size: 12px;
   line-height: 12px;
-  background-color: $background-color-card;
+  background-color: $background-color-example;
   padding: 0 5px;
   margin: 0;
   position: absolute;
@@ -112,7 +112,7 @@
   }
 
   .example-list__text {
-    background-color: $background-color-card;
+    background-color: $background-color-example;
   }
 
   .example-list__item--price {
