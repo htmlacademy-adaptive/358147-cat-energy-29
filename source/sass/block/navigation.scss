@@ -8,6 +8,7 @@
 }
 
 .navigation__toggle {
+  display: none;
   border: none;
   background-color: $background-color-page;
   width: 24px;
@@ -19,6 +20,10 @@
 
   &--open {
     background-image: url("../img/nav-closed.svg");
+  }
+
+  &--js {
+    display: block;
   }
 }
 
