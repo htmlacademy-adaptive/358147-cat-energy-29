@@ -1,3 +1,7 @@
+.content-form {
+  border-top: 1px solid $border-catalog;
+}
+
 .content-form__text {
   font-family: "Oswald", "Arial", sans-serif;
   text-transform: uppercase;
@@ -6,6 +10,10 @@
 }
 
 @media (min-width: $tablet-width) {
+  .content-form {
+    border-top: none;
+  }
+
   .content-form__text {
     font-size: 20px;
     line-height: 30px;

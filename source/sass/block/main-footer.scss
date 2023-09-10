@@ -24,13 +24,14 @@
 }
 
 .main-footer__addres {
-  line-height: 24px;
+  line-height: 20px;
   font-style: normal;
 }
 
 .main-footer__map {
   display: block;
   margin: auto;
+  width: 100%;
 }
 
 .main-footer__social-list {
@@ -71,8 +72,8 @@
 @media (min-width: $tablet-width) {
   .main-footer__social-wrapper {
     display: flex;
-    justify-content: space-between;
-    padding: 72px 0;
+    flex-wrap: wrap;
+    padding: 57px 0;
   }
 
   .main-footer__addres-wrapper {
@@ -96,6 +97,11 @@
     margin-right: 40px;
   }
 
+  .main-footer__addres-city {
+    display: inline-block;
+    margin-top: 16px;
+  }
+
   .main-footer__map {
     height: 400px;
   }
@@ -103,10 +109,12 @@
   .main-footer__logo {
     padding: 0;
     border: none;
+    margin-right: 161px;
+    margin-top: 4px;
   }
 
   .main-footer__social-list {
-    margin: 0;
+    margin: 4px auto 0 0;
   }
 
   .main-footer__copyright {
@@ -118,8 +126,22 @@
 @media (min-width: $desktop-width) {
   .main-footer__addres-wrapper {
     position: absolute;
-    top: 90px;
-    // left: calc(50% - 570px);
+    top: 96px;
+    width: 449px;
+    padding: 60px 77px 59px 40px;
     background-color: $background-color-page;
+  }
+
+  .main-footer__addres {
+    text-align: left;
+    margin: 0;
+  }
+
+  .main-footer__social-wrapper {
+    padding: 69px 0;
+  }
+
+  .main-footer__logo {
+    margin-right: 416px;
   }
 }

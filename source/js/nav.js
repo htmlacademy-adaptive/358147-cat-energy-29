@@ -1,7 +1,8 @@
 let navMain = document.querySelector('.navigation-list');
 let navToggle = document.querySelector('.navigation__toggle');
 
-navMain.classList.add('navigation-list--gs');
+navMain.classList.add('navigation-list--js');
+navToggle.classList.add('navigation__toggle--js');
 
 navToggle.addEventListener('click', function () {
   if (navMain.classList.contains('navigation-list--open')) {

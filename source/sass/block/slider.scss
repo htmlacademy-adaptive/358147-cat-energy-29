@@ -18,7 +18,7 @@
   position: absolute;
   overflow: hidden;
   width: 50%;
-  background-image: linear-gradient(#ffffff 0, #f2f2f2 0);
+  background-image: linear-gradient($background-color-page 0, $background-color-example 0);
 }
 
 .slider__button {
@@ -89,7 +89,7 @@
   }
 
   .slider__fat {
-    background-image: linear-gradient(to top, $background-color-card 359px, $background-color-page 359px);
+    background-image: linear-gradient(to top, $background-color-example 359px, $background-color-page 359px);
   }
 }
 
@@ -100,6 +100,6 @@
   }
 
   .slider__fat {
-    background-image: linear-gradient($background-color-page 135px, $background-color-card 135px);
+    background-image: linear-gradient($background-color-page 135px, $background-color-example 135px);
   }
 }

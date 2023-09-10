@@ -18,19 +18,19 @@
   }
 
   &--leaf::after {
-    background-image: url("../img/icon/icon-leaf.svg");
+    background-image: url("../img/icon-leaf.svg");
   }
 
   &--powder::after {
-    background-image: url("../img/icon/icon-powder.svg");
+    background-image: url("../img/icon-powder.svg");
   }
 
   &--eat::after {
-    background-image: url("../img/icon/icon-eat.svg");
+    background-image: url("../img/icon-eat.svg");
   }
 
   &--clock::after {
-    background-image: url("../img/icon/icon-clock.svg");
+    background-image: url("../img/icon-clock.svg");
   }
 }
 
@@ -61,6 +61,10 @@
       z-index: -1;
     }
 
+    &:first-child::before {
+      right: 99px;
+    }
+
     &::after {
       width: 80px;
       height: 80px;
@@ -76,6 +80,10 @@
   .advantages-card {
     &::before {
       right: 6px;
+    }
+
+    &:first-child::before {
+      right: 25px;
     }
   }
 }

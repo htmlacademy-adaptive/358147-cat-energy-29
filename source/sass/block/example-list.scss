@@ -44,7 +44,7 @@
 .example-list__text {
   font-size: 12px;
   line-height: 12px;
-  background-color: $background-color-card;
+  background-color: $background-color-example;
   padding: 0 5px;
   margin: 0;
   position: absolute;
@@ -111,8 +111,12 @@
     margin-bottom: 0;
   }
 
+  .example-list__item--weight {
+    margin-right: 42px;
+  }
+
   .example-list__text {
-    background-color: $background-color-card;
+    background-color: $background-color-example;
   }
 
   .example-list__item--price {
@@ -122,5 +126,9 @@
   .example-list__price {
     text-align: left;
     margin-top: 56px;
+  }
+
+  .example-list__price-text {
+    margin-right: 62px;
   }
 }

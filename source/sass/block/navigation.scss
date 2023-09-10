@@ -8,17 +8,22 @@
 }
 
 .navigation__toggle {
+  display: none;
   border: none;
   background-color: $background-color-page;
   width: 24px;
   height: 24px;
   cursor: pointer;
-  background-image: url("../img/icon/nav-opened.svg");
+  background-image: url("../img/nav-opened.svg");
   background-repeat: no-repeat;
   background-position: center;
 
   &--open {
-    background-image: url("../img/icon/nav-closed.svg");
+    background-image: url("../img/nav-closed.svg");
+  }
+
+  &--js {
+    display: block;
   }
 }
 
@@ -28,12 +33,12 @@
   }
 
   .navigation {
-    padding: 25px 0;
+    padding: 24px 0;
   }
 }
 
 @media (min-width: $desktop-width) {
   .navigation {
-    padding: 57px 0;
+    padding: 54px 0;
   }
 }

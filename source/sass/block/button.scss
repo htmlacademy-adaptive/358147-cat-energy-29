@@ -46,13 +46,17 @@
     font-size: 20px;
     line-height: 20px;
     width: 225px;
-    margin-left: 80px;
-    padding-top: 15px;
+    margin-left: 89px;
+    padding-top: 16px;
     padding-bottom: 15px;
   }
 }
 
 @media (min-width: $desktop-width) {
+  .button--hero {
+    margin-left: 80px;
+  }
+
   .button--additional-card {
     width: 225px;
   }

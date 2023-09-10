@@ -1,6 +1,6 @@
 .present {
   background-color: $background-color-promo;
-  background-image: url("../img/gift-bg@1x.jpg");
+  background-image: url("../img/bg/gift-bg@1x.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   color: $color-promo;
@@ -14,7 +14,7 @@
     content: "";
     width: 78px;
     height: 80px;
-    background-image: url("../img/icon/gift.svg");
+    background-image: url("../img/gift.svg");
     background-repeat: no-repeat;
     background-position: center;
     margin: 0 auto;
@@ -24,7 +24,7 @@
 
 @media (min-resolution: 2dppx) {
   .present {
-    background-image: url("../img/gift-bg@2x.jpg");
+    background-image: url("../img/bg/gift-bg@2x.jpg");
   }
 }
 
@@ -37,7 +37,7 @@
     display: flex;
     justify-content: space-between;
     padding: 55px 80px;
-    background-image: url("../img/gift-bg-tablet@1x.jpg");
+    background-image: url("../img/bg/gift-bg-tablet@1x.jpg");
 
     &::before {
       margin: 0;
@@ -47,7 +47,7 @@
 
   @media (min-resolution: 2dppx) {
     .present {
-      background-image: url("../img/gift-bg-tablet@2x.jpg");
+      background-image: url("../img/bg/gift-bg-tablet@2x.jpg");
     }
   }
 
@@ -62,26 +62,25 @@
   .present {
     display: block;
     background-color: $background-color-promo;
-    background-image: url("../img/gift-bg@1x.jpg");
+    background-image: url("../img/bg/gift-bg@1x.jpg");
     background-repeat: no-repeat;
     color: $color-promo;
     font-size: 16px;
     line-height: 20px;
-    padding: 55px 40px;
-    padding-bottom: 25px;
+    padding: 55px 40px 40px 40px;
     align-self: start;
 
     &::before {
       display: block;
       content: "";
       margin: 0 auto;
-      margin-bottom: 50px;
+      margin-bottom: 45px;
     }
   }
 
   @media (min-resolution: 2dppx) {
     .present {
-      background-image: url("../img/gift-bg@2x.jpg");
+      background-image: url("../img/bg/gift-bg@2x.jpg");
       padding-bottom: 38px;
     }
   }
