@@ -67,7 +67,7 @@
   border: 1px solid #bababa;
 }
 
-.form__radio:focus + .form__radio-mark {
+.form__radio:focus-visible + .form__radio-mark {
   outline: 1px solid $color-page;
 }
 
@@ -171,7 +171,7 @@
   border: 1px solid #bababa;
 }
 
-.form__checkbox:focus + .form__checkbox-mark {
+.form__checkbox:focus-visible + .form__checkbox-mark {
   outline: 1px solid $color-page;
 }
 

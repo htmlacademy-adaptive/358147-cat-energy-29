@@ -66,6 +66,7 @@
     background-position: right center;
     background-repeat: no-repeat;
     margin-left: 17px;
+    flex-shrink: 0;
   }
 
   &:hover::after {
