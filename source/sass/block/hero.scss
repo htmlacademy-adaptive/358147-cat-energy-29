@@ -82,7 +82,7 @@
 @media (min-width: $desktop-width) {
   .hero {
     background: url("../img/bg/bg-hero-desk@1x.jpg") no-repeat bottom right, linear-gradient(90deg, $background-color-page 50%, #63a63a 50%);
-    margin-top: -410px;
+    margin-top: -3010px;
   }
 
   @media (min-resolution: 2dppx) {
@@ -94,7 +94,7 @@
   .hero__wrapper {
     width: 1220px;
     padding: 0 80px;
-    padding-top: 400px;
+    padding-top: 3000px;
     padding-bottom: 185px;
     margin: 0 auto;
     position: relative;
