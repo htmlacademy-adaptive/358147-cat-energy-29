@@ -95,6 +95,26 @@
   margin-bottom: 7px;
 }
 
+.form__control--number-weight {
+  width: 177px;
+}
+
+.form__control--number-age {
+  width: 144px;
+}
+
+.form__control--number[type="number"]::-webkit-outer-spin-button,
+.form__control--number[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+.form__control--number[type="number"],
+.form__control--number[type="number"]:hover,
+.form__control--number[type="number"]:focus {
+  appearance: none;
+  -moz-appearance: textfield;
+}
+
 .form__control--textarea {
   min-height: 120px;
   margin: 11px 0 14px 0;
@@ -251,6 +271,14 @@
     line-height: 20px;
     padding: 10px;
     padding-left: 17px;
+  }
+
+  .form__control--number-weight {
+    width: auto;
+  }
+
+  .form__control--number-age {
+    width: auto;
   }
 
   .form__control--email {
