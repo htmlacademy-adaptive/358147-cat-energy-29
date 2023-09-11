@@ -50,7 +50,7 @@
   left: 0;
 }
 
-.form__radio:checked+.form__radio-mark::before {
+.form__radio:checked + .form__radio-mark::before {
   position: absolute;
   content: "";
   width: 13px;
@@ -62,11 +62,11 @@
   transform: translate(-50%, -50%);
 }
 
-.form__radio:hover+.form__radio-mark {
+.form__radio:hover + .form__radio-mark {
   border: 1px solid #bababa;
 }
 
-.form__radio:focus-visible+.form__radio-mark {
+.form__radio:focus-visible + .form__radio-mark {
   outline: 1px solid $color-page;
 }
 
@@ -95,8 +95,6 @@
   margin-bottom: 7px;
 }
 
-
-
 .form__control--number-weight {
   width: 177px;
 }
@@ -105,14 +103,12 @@
   width: 144px;
 }
 
-
-
 .form__control--number[type="number"]::-webkit-outer-spin-button,
 .form__control--number[type="number"]::-webkit-inner-spin-button {
   -webkit-appearance: none;
 }
 
-.form__control--number[type='number'],
+.form__control--number[type="number"],
 .form__control--number[type="number"]:hover,
 .form__control--number[type="number"]:focus {
   appearance: none;
@@ -131,7 +127,7 @@
 .form__control--email {
   padding-right: 40px;
 
-  &:focus+svg {
+  &:focus + svg {
     stroke: #68b738;
   }
 }
@@ -139,7 +135,7 @@
 .form__control--tel {
   padding-right: 40px;
 
-  &:focus+svg {
+  &:focus + svg {
     stroke: #68b738;
   }
 }
@@ -148,7 +144,7 @@
   border: 1px solid #ff8282;
   outline: 1px solid #ff8282;
 
-  &+svg {
+  & + svg {
     stroke: #ff8282;
   }
 
@@ -157,7 +153,7 @@
     outline: 1px solid #ff8282;
   }
 
-  &:focus+svg {
+  &:focus + svg {
     stroke: #ff8282;
   }
 }
@@ -186,18 +182,18 @@
   left: 0;
 }
 
-.form__checkbox:checked+.form__checkbox-mark {
+.form__checkbox:checked + .form__checkbox-mark {
   background-image: url("../img/tick.svg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: 18px 14px;
 }
 
-.form__checkbox:hover+.form__checkbox-mark {
+.form__checkbox:hover + .form__checkbox-mark {
   border: 1px solid #bababa;
 }
 
-.form__checkbox:focus-visible+.form__checkbox-mark {
+.form__checkbox:focus-visible + .form__checkbox-mark {
   outline: 1px solid $color-page;
 }
 
@@ -342,7 +338,7 @@
     row-gap: 24px;
   }
 
-  .form__checkbox:checked+.form__checkbox-mark {
+  .form__checkbox:checked + .form__checkbox-mark {
     background-size: auto;
   }
 
@@ -364,7 +360,7 @@
     margin-right: 17px;
   }
 
-  .form__radio:checked+.form__radio-mark::before {
+  .form__radio:checked + .form__radio-mark::before {
     width: 18px;
     height: 18px;
   }
