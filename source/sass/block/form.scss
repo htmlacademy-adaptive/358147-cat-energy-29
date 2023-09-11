@@ -11,7 +11,7 @@
 
 .form__fieldset--border {
   border-bottom: 1px solid $border-catalog;
-  padding-bottom: 8px;
+  padding-bottom: 15px;
 }
 
 .form__fieldset--radio {
@@ -28,22 +28,26 @@
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  margin-bottom: 14px;
   position: relative;
 }
 
 .form__label--radio {
-  margin-bottom: 11px;
+  display: block;
+  position: relative;
+  padding-left: 45px;
+  padding-top: 7px;
+  padding-bottom: 18px;
 }
 
 .form__radio-mark {
   display: block;
-  width: 30px;
-  height: 30px;
+  width: 28px;
+  height: 28px;
   border: 1px solid $border-example;
   border-radius: 50%;
-  position: relative;
-  margin-right: 13px;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
 .form__radio:checked + .form__radio-mark::before {
@@ -62,7 +66,7 @@
   border: 1px solid #bababa;
 }
 
-.form__radio:focus + .form__radio-mark {
+.form__radio:focus-visible + .form__radio-mark {
   outline: 1px solid $color-page;
 }
 
@@ -78,6 +82,8 @@
   flex-grow: 1;
   padding: 13px;
   margin-left: 15px;
+  margin-top: 7px;
+  margin-bottom: 7px;
   border: 1px solid $border-form;
 
   &::placeholder {
@@ -85,10 +91,13 @@
   }
 }
 
+.form__contacts-wrapper {
+  margin-bottom: 7px;
+}
+
 .form__control--textarea {
   min-height: 120px;
-  margin: 0;
-  margin-top: 6px;
+  margin: 11px 0 14px 0;
 }
 
 .form__control:hover {
@@ -132,6 +141,7 @@
 .form__label svg {
   position: absolute;
   right: 13px;
+  bottom: 21px;
 }
 
 .form__legend {
@@ -147,7 +157,9 @@
   width: 28px;
   height: 28px;
   border: 1px solid $border-example;
-  margin-right: 16px;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
 .form__checkbox:checked + .form__checkbox-mark {
@@ -161,7 +173,7 @@
   border: 1px solid #bababa;
 }
 
-.form__checkbox:focus + .form__checkbox-mark {
+.form__checkbox:focus-visible + .form__checkbox-mark {
   outline: 1px solid $color-page;
 }
 
@@ -170,17 +182,21 @@
 }
 
 .form__checkbox-wrapper {
-  margin-top: 32px;
-  margin-bottom: 15px;
+  margin-top: 33px;
+  margin-bottom: 1px;
 }
 
 .form__label--checkbox {
-  margin-bottom: 13px;
+  display: block;
+  position: relative;
+  padding-left: 45px;
+  padding-top: 6px;
+  padding-bottom: 19px;
 }
 
 .form__legend--line {
   margin-top: 15px;
-  margin-bottom: 31px;
+  margin-bottom: 25px;
 
   &::before {
     content: " ";
@@ -196,6 +212,7 @@
   padding: 0 20px;
   margin-left: -20px;
   background-color: $background-color-page;
+  display: inline-block;
 }
 
 .form__submit {
@@ -208,7 +225,6 @@
 }
 
 .form__legend-text--contacts {
-  display: block;
   width: 183px;
 }
 
@@ -221,13 +237,13 @@
 
 @media (min-width: $tablet-width) {
   .form {
-    padding-bottom: 58px;
+    padding-bottom: 61px;
   }
 
   .form__label {
     font-size: 20px;
     line-height: 20px;
-    margin-bottom: 20px;
+    margin-bottom: 6px;
   }
 
   .form__control {
@@ -245,6 +261,11 @@
     padding-right: 40px;
   }
 
+  .form__label svg {
+    right: 14px;
+    bottom: 26px;
+  }
+
   .form__fieldset {
     padding-bottom: 40px;
   }
@@ -254,12 +275,15 @@
   }
 
   .form__fieldset--radio {
-    padding-top: 15px;
-    margin-bottom: 20px;
+    padding-top: 20px;
+    margin-bottom: 21px;
   }
 
   .form__label--radio {
     margin-bottom: 11px;
+    padding-left: 59px;
+    padding-top: 12px;
+    padding-bottom: 10px;
   }
 
   .form__legend--line::before {
@@ -269,10 +293,11 @@
   .form__legend-text {
     font-size: 36px;
     line-height: 36px;
+    padding: 0 40px;
+    margin-left: -40px;
   }
 
   .form__legend-text--contacts {
-    display: inline;
     width: auto;
   }
 
@@ -280,8 +305,9 @@
     display: flex;
     flex-wrap: wrap;
     margin-top: 58px;
+    margin-bottom: 4px;
     column-gap: 61px;
-    row-gap: 32px;
+    row-gap: 24px;
   }
 
   .form__checkbox:checked + .form__checkbox-mark {
@@ -289,7 +315,9 @@
   }
 
   .form__label--checkbox {
-    width: 283px;
+    width: 223px;
+    padding-left: 60px;
+    padding-top: 9px;
     margin: 0;
   }
 
@@ -310,7 +338,8 @@
   }
 
   .form__control--textarea {
-    margin-top: 57px;
+    margin-top: 61px;
+    margin-bottom: 15px;
     padding: 14px;
     padding-left: 19px;
     min-height: 145px;
@@ -350,7 +379,7 @@
 
   .form__fieldset--radio {
     padding: 0;
-    padding-top: 10px;
+    padding-top: 17px;
   }
 
   .form__contacts-wrapper {
@@ -371,10 +400,10 @@
     width: 1220px;
     padding: 0 80px;
     margin: 0 auto;
-    margin-bottom: 7px;
+    margin-bottom: 14px;
     display: grid;
     grid-template-columns: 50% auto;
-    gap: 42px;
+    gap: 40px;
   }
 
   .form__label svg {
@@ -382,18 +411,18 @@
   }
 
   .form__label--checkbox {
-    width: 230px;
+    width: 170px;
   }
 
   .form__control--textarea {
-    margin-top: 43px;
-    margin-bottom: 10px;
+    margin-top: 50px;
+    margin-bottom: 22px;
   }
 
   .form__checkbox-wrapper {
     column-gap: 95px;
     margin-top: 57px;
-    margin-bottom: 20px;
+    margin-bottom: 12px;
   }
 
   .form__submit {

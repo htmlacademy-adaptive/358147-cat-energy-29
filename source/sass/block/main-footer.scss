@@ -32,6 +32,9 @@
   display: block;
   margin: auto;
   width: 100%;
+  background-image: url("../img/bg/map-mobile.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .main-footer__social-list {
@@ -104,6 +107,7 @@
 
   .main-footer__map {
     height: 400px;
+    background-image: url("../img/bg/map-tablet.jpg");
   }
 
   .main-footer__logo {
@@ -135,6 +139,10 @@
   .main-footer__addres {
     text-align: left;
     margin: 0;
+  }
+
+  .main-footer__map {
+    background-image: url("../img/bg/map-desk.jpg");
   }
 
   .main-footer__social-wrapper {
